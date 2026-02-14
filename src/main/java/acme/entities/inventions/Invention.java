@@ -15,6 +15,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
+import acme.realms.Inventor;
 import acme.client.components.validation.ValidUrl;
 import lombok.Getter;
 import lombok.Setter;
