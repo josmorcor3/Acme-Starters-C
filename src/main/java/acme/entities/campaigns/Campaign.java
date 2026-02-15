@@ -49,12 +49,12 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Moment				startMoment;
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Moment				endMoment;
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
