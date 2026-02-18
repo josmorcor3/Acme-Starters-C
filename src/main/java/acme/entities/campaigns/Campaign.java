@@ -1,16 +1,16 @@
 
 package acme.entities.campaigns;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
@@ -48,13 +48,14 @@ public class Campaign extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date				startMoment;
+	@Temporal(TemporalType.TIMESTAMP) //Como hay varias formas de definir el tiempo se usa temporal
+	private Moment				startMoment;
 
 	@Mandatory
+	//Cuando sea un producto real habria que implementar también una restrocción para la acción de crear 
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				endMoment;
+	private Moment				endMoment;
 
 	@Optional
 	@ValidUrl
@@ -68,11 +69,30 @@ public class Campaign extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+
+	@Transient
+	//Hay que calcular los meses de diferencia entre start y end pero creo que hay que pasarlos primero a otro tipo
+	// para poder aplicar la función que me realiza esa operación
+	public Double getMonthsActive() {
+		double result = 0.0;
+		return result;
+	}
+
+	@Transient
+	//Tengo que acceder al atributo de effort de la entidad Milestone pero no se como hacerlo si tengo la relación
+	//mapeada en la clase Milestone, tendría que añadir aqui también la relación???
+	public Double getEffort() {
+		double result = 0.0;
+		return result;
+
+	}
+
 	// Relationships ----------------------------------------------------------
+
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Spokesperson		spokesperson;
+	private Spokesperson spokesperson;
 
 }

@@ -29,10 +29,11 @@ public class Spokesperson extends AbstractRole {
 	@Mandatory
 	//@ValidText
 	@Column
+	//Podría ser otro tipo pero nos lo facilitan
 	private String				achievements;
 
 	@Mandatory
-	@Valid
+	@Valid //Validar recursivamente todas las restricciones del tipo
 	@Column
 	private Boolean				licensed;
 

@@ -34,7 +34,7 @@ public class Milestone extends AbstractEntity {
 	private String				achievements;
 
 	@Mandatory
-	@ValidNumber(min=1)
+	@ValidNumber(min = 1)
 	@Column
 	private Double				effort;
 
@@ -44,6 +44,8 @@ public class Milestone extends AbstractEntity {
 	private MilestoneKind		kind;
 
 	// Derived attributes -----------------------------------------------------
+
+	//Hay que crearlos ya 
 
 	// Relationships ----------------------------------------------------------
 
