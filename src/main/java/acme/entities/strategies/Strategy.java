@@ -1,12 +1,17 @@
 
 package acme.entities.strategies;
 
+import java.time.Duration;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Moment;
@@ -15,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Fundraiser;
 import lombok.Getter;
 import lombok.Setter;
@@ -67,11 +73,32 @@ public class Strategy extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Transient
+	@Autowired
+	private StrategyRepository	repository;
+
+
+	@Transient
+	public Double getMonthsActive() {
+		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		double months = duration.toDays() / 30.;
+		return Math.round(months * 10) / 10.0;
+	}
+
+	@Transient
+	public Double getExpectedPercentage() {
+		Double result;
+		Double total = this.repository.totalExpectedPercentagesTactics(this.getId());
+		result = total == null ? 0. : total;
+		return result;
+	}
+
 	// Relationships ----------------------------------------------------------
+
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Fundraiser			fundraiser;
+	private Fundraiser fundraiser;
 
 }
