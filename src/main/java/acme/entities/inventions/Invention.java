@@ -20,6 +20,9 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
+import acme.constraints.ValidTicker;
 import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,17 +39,17 @@ public class Invention extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	// @ValidTicker
+	@ValidTicker
 	@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
-	// @ValidHeader
+	@ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	// @ValidText
+	@ValidText
 	@Column
 	private String				description;
 
