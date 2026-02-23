@@ -1,6 +1,8 @@
 
 package acme.entities.campaigns;
 
+import java.time.Duration;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -9,6 +11,8 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
@@ -16,9 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.constraints.ValidHeader;
-import acme.constraints.ValidText;
-import acme.constraints.ValidTicker;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Spokesperson;
 import lombok.Getter;
 import lombok.Setter;
@@ -35,17 +37,17 @@ public class Campaign extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	@ValidTicker
+	// @ValidTicker
 	@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
-	@ValidHeader
+	// @ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	@ValidText
+	// @ValidText
 	@Column
 	private String				description;
 
@@ -72,20 +74,27 @@ public class Campaign extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Transient
+	@Autowired
+	private CampaignRepository	repository;
+
 
 	@Transient
-	//Hay que calcular los meses de diferencia entre start y end pero creo que hay que pasarlos primero a otro tipo
-	// para poder aplicar la función que me realiza esa operación
 	public Double getMonthsActive() {
-		double result = 0.0;
-		return result;
+		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		double months = duration.toDays() / 30.;
+		return Math.round(months * 10) / 10.0;
 	}
 
 	@Transient
-	//Tengo que acceder al atributo de effort de la entidad Milestone pero no se como hacerlo si tengo la relación
-	//mapeada en la clase Milestone, tendría que añadir aqui también la relación???
 	public Double getEffort() {
-		double result = 0.0;
+		Double result;
+		Double effort = this.repository.totalEffortCampaign(this.getId());
+
+		if (effort == null)
+			result = 0.;
+		else
+			result = effort;
 		return result;
 
 	}
