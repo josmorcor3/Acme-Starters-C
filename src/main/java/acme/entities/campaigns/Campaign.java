@@ -2,6 +2,7 @@
 package acme.entities.campaigns;
 
 import java.time.Duration;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +15,6 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
@@ -57,13 +57,13 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP) //Como hay varias formas de definir el tiempo se usa temporal
-	private Moment				startMoment;
+	private Date				startMoment;
 
 	@Mandatory
 	//Cuando sea un producto real habria que implementar también una restrocción para la acción de crear 
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Moment				endMoment;
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
