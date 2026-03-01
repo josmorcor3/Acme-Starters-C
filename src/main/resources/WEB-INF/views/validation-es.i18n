@@ -13,3 +13,8 @@ acme.validation.text.message   		= Debe tener entre 1 y 255 caracteres
 
 acme.validation.duplicated-ticker.message	= Referencia ya usada
 acme.validation.ticker.message				= La referencia debe comenzar con dos letras mayúsculas y dos dígitos, seguido de un guion y de 5 a 10 letras, dígitos o guiones bajos
+
+acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a no ser que tenga al menos un hito
+acme.validation.campaign.invalid-time-interval.message = El momento de inicio de una campaña debe ser anterior al momento de fin
+acme.validation.campaign.invalid-start-moment.message = Una campaña debe tener un instante de comienzo en el futuro a la hora de ser publicada
+acme.validation.campaign.invalid-end-moment.message = Una campaña debe tener un instante de fin en el futuro a la hora de ser publicada
