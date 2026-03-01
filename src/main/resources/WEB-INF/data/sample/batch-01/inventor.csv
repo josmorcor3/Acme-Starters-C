@@ -1,4 +1,4 @@
-key,key:userAccount,bio,key-words,licensed
+key,key:user-account,bio,key-words,licensed
 # base entity
 inventor-01,user-account-inventor-01,"Bio of inventor",key-word1_key-word2_key-word3,false
 # bio - standard variations
