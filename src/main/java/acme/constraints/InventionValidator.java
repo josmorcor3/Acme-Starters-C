@@ -56,26 +56,26 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			{
 				boolean startMomentIsNotNull;
 				startMomentIsNotNull = invention.getStartMoment() != null;
-				super.state(context, startMomentIsNotNull, "startMoment", "acme.validation.invention.null-start-moment.message");
+				super.state(context, startMomentIsNotNull, "startMoment", "acme.validation.null-start-moment.message");
 			}
 			{
 				boolean endMomentIsNotNull;
 				endMomentIsNotNull = invention.getEndMoment() != null;
-				super.state(context, endMomentIsNotNull, "endMoment", "acme.validation.invention.null-end-moment.message");
+				super.state(context, endMomentIsNotNull, "endMoment", "acme.validation.null-end-moment.message");
 			}
 			{
 				boolean startMomentIsBeforeEndMoment;
 
 				startMomentIsBeforeEndMoment = MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
 
-				super.state(context, startMomentIsBeforeEndMoment, "time interval", "acme.validation.invention.invalid-time-interval.message");
+				super.state(context, startMomentIsBeforeEndMoment, "time interval", "acme.validation.invalid-time-interval.message");
 			}
 			{
 				boolean correctCurrency;
 
 				correctCurrency = this.repository.computeInventionCurrencies(invention.getId()).stream().allMatch(c -> c.equals("EUR"));
 
-				super.state(context, correctCurrency, "money currency", "acme.validation.invention.invalid-currency.message");
+				super.state(context, correctCurrency, "money currency", "acme.validation.invalid-currency.message");
 			}
 			result = !super.hasErrors(context);
 		}
