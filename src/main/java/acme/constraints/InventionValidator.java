@@ -70,6 +70,13 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 				super.state(context, startMomentIsBeforeEndMoment, "time interval", "acme.validation.invention.invalid-time-interval.message");
 			}
+			{
+				boolean correctCurrency;
+
+				correctCurrency = this.repository.computeInventionCurrencies(invention.getId()).stream().allMatch(c -> c.equals("EUR"));
+
+				super.state(context, correctCurrency, "money currency", "acme.validation.invention.invalid-currency.message");
+			}
 			result = !super.hasErrors(context);
 		}
 
