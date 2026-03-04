@@ -60,20 +60,6 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 				super.state(context, startMomentIsBeforeEndMoment, "time interval", "acme.validation.invention.invalid-time-interval.message");
 			}
-			{
-				boolean publishedInventionStartMomentIsInTheFuture;
-
-				publishedInventionStartMomentIsInTheFuture = invention.getDraftMode() || MomentHelper.isFuture(invention.getStartMoment());
-
-				super.state(context, publishedInventionStartMomentIsInTheFuture, "startMoment", "acme.validation.invention.invalid-start-moment.message");
-			}
-			{
-				boolean publishedInventionEndMomentIsInTheFuture;
-
-				publishedInventionEndMomentIsInTheFuture = invention.getDraftMode() || MomentHelper.isFuture(invention.getEndMoment());
-
-				super.state(context, publishedInventionEndMomentIsInTheFuture, "endMoment", "acme.validation.invention.invalid-end-moment.message");
-			}
 			result = !super.hasErrors(context);
 		}
 
