@@ -17,3 +17,6 @@ user-account-inventor-07,true,"UserIdentity{name: 'Inventor7', surname: 'Acme', 
 user-account-inventor-08,true,"UserIdentity{name: 'Inventor8', surname: 'Acme', email: 'inventor8@acme.com'}",inventor8,inventor8
 user-account-inventor-09,true,"UserIdentity{name: 'Inventor9', surname: 'Acme', email: 'inventor9@acme.com'}",inventor9,inventor9
 user-account-inventor-10,true,"UserIdentity{name: 'Inventor10', surname: 'Acme', email: 'inventor10@acme.com'}",inventor10,inventor10
+user-account-auditor-01,true,"UserIdentity{name: 'Auditor1', surname: 'Acme', email: 'auditor1@acme.com'}",auditor1,auditor1
+user-account-auditor-02,true,"UserIdentity{name: 'Auditor2', surname: 'Acme', email: 'auditor2@acme.com'}",auditor2,auditor2
+user-account-auditor-03,true,"UserIdentity{name: 'Auditor3', surname: 'Acme', email: 'auditor3@acme.com'}",auditor3,auditor3
