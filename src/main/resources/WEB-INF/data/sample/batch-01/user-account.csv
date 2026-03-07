@@ -19,3 +19,13 @@ user-account-fundraiser-08,true,"UserIdentity{name: 'Fundraiser8', surname: 'fun
 user-account-fundraiser-09,true,"UserIdentity{name: 'Fundraiser9', surname: 'fundraiser', email: 'fundraiser9@acme.com'}",fundraiser9,fundraiser9
 user-account-fundraiser-10,true,"UserIdentity{name: 'Fundraiser10', surname: 'fundraiser', email: 'fundraiser10@acme.com'}",fundraiser10,fundraiser10
 
+user-account-inventor-01,true,"UserIdentity{name: 'Inventor1', surname: 'Acme', email: 'inventor1@acme.com'}",inventor1,inventor1
+user-account-inventor-02,true,"UserIdentity{name: 'Inventor2', surname: 'Acme', email: 'inventor2@acme.com'}",inventor2,inventor2
+user-account-inventor-03,true,"UserIdentity{name: 'Inventor3', surname: 'Acme', email: 'inventor3@acme.com'}",inventor3,inventor3
+user-account-inventor-04,true,"UserIdentity{name: 'Inventor4', surname: 'Acme', email: 'inventor4@acme.com'}",inventor4,inventor4
+user-account-inventor-05,true,"UserIdentity{name: 'Inventor5', surname: 'Acme', email: 'inventor5@acme.com'}",inventor5,inventor5
+user-account-inventor-06,true,"UserIdentity{name: 'Inventor6', surname: 'Acme', email: 'inventor6@acme.com'}",inventor6,inventor6
+user-account-inventor-07,true,"UserIdentity{name: 'Inventor7', surname: 'Acme', email: 'inventor7@acme.com'}",inventor7,inventor7       
+user-account-inventor-08,true,"UserIdentity{name: 'Inventor8', surname: 'Acme', email: 'inventor8@acme.com'}",inventor8,inventor8
+user-account-inventor-09,true,"UserIdentity{name: 'Inventor9', surname: 'Acme', email: 'inventor9@acme.com'}",inventor9,inventor9
+user-account-inventor-10,true,"UserIdentity{name: 'Inventor10', surname: 'Acme', email: 'inventor10@acme.com'}",inventor10,inventor10
