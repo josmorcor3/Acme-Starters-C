@@ -11,6 +11,7 @@
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
+master.menu.anonymous.list-inventions = List inventions
 master.menu.anonymous.favourite-link = Favourite link
 
 # master.menu.administrator ###################################################
