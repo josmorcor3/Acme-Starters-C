@@ -1,8 +1,6 @@
 
 package acme.constraints;
 
-import java.util.List;
-
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +10,6 @@ import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.strategies.Strategy;
 import acme.entities.strategies.StrategyRepository;
-import acme.entities.strategies.Tactic;
 
 @Validator
 public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy> {
@@ -47,50 +44,28 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 				existingStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
 				uniqueStrategy = existingStrategy == null || existingStrategy.equals(strategy);
 
-				super.state(context, uniqueStrategy, "ticker", "acme.validation.job.duplicated-ticker.message");
+				super.state(context, uniqueStrategy, "ticker", "acme.validation.duplicated-ticker.message");
 			}
 
 			{
 				boolean hasTactics;
 
-				if (!strategy.getDraftMode()) {
-					List<Tactic> tactics = this.repository.findTacticsByStrategy(strategy.getId());
-					hasTactics = !tactics.isEmpty();
+				Long count = this.repository.findTacticsByStrategy(strategy.getId());
+				Long tactics = count == null ? 0 : count;
+				hasTactics = strategy.getDraftMode() || tactics > 0;
 
-					super.state(context, hasTactics, "*", "acme.validation.strategy.no-tactics.message");
+				super.state(context, hasTactics, "*", "acme.validation.strategy.published-without-tactics.message");
+			}
+			{
+				boolean startMomentIsBeforeEndMoment;
+				if (strategy.getStartMoment() != null && strategy.getEndMoment() != null) {
+					startMomentIsBeforeEndMoment = MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment());
 
-					boolean validDates;
-					if (strategy.getStartMoment() != null && strategy.getEndMoment() != null) {
-						validDates = MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment());
-
-						super.state(context, validDates, "endMoment", "acme.validation.strategy.endMoment-no-after.startMoment.message");
-					}
-
+					super.state(context, startMomentIsBeforeEndMoment, "endMoment", "acme.validation.invalid-time-interval.message");
 				}
 
 			}
 
-			/*
-			 * 
-			 * {
-			 * boolean correctWorkload;
-			 * 
-			 * correctWorkload = strategy.isDraftMode() || strategy.getWorkLoad() == 100.00;
-			 * 
-			 * super.state(context, correctWorkload, "*", "acme.validation.job.workload.message");
-			 * }
-			 * {
-			 * Date minimumDeadline;
-			 * boolean correctDeadline;
-			 * 
-			 * if (strategy.isDraftMode() && strategy.getDeadline() != null) {
-			 * minimumDeadline = MomentHelper.deltaFromCurrentMoment(7, ChronoUnit.DAYS);
-			 * correctDeadline = MomentHelper.isAfterOrEqual(strategy.getDeadline(), minimumDeadline);
-			 * 
-			 * super.state(context, correctDeadline, "deadline", "acme.validation.job.deadline.message");
-			 * }
-			 * }
-			 */
 			result = !super.hasErrors(context);
 		}
 
