@@ -2,7 +2,7 @@ key,ticker,name,description,start-moment,end-moment,more-info,draft-mode,key:fun
 #base-entity
 strategy-01,TK00-abc00,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-01
 #ticker
-strategy-02,TK00-abc000abc,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-01
+strategy-02,TK00-abc000abc,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-02
 strategy-03,TK00-abc00abc00,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-01
 strategy-04,TK00-abc001,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-01
 #name
