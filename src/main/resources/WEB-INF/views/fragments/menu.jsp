@@ -21,6 +21,8 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 
