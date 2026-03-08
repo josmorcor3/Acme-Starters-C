@@ -1,6 +1,8 @@
 
 package acme.entities.sponsorships;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +11,15 @@ import acme.client.repositories.AbstractRepository;
 @Repository
 public interface SponsorshipRepository extends AbstractRepository {
 
-	@Query("select sum(d.money.amount) from Donation d where d.sponsorship.id = :sponsorshipId")
+	@Query("select sum(d.money.amount) from Donation d where d.sponsorship.id = :sponsorshipId and d.money.currency ='EUR'")
 	Double calculateTotalMoney(int sponsorshipId);
+
+	@Query("select s from Sponsorship s where s.ticker = :ticker")
+	Sponsorship findSponsorshipByTicker(String ticker);
+
+	@Query("select count(d) from Donation d where d.sponsorship.id = :sponsorshipId")
+	Long findDonationsBySponsorshipId(int sponsorshipId);
+
+	@Query("select distinct d.money.currency from Donation d where d.sponsorship.id = :sponsorshipId")
+	List<String> computeSponsorshipCurrencies(int sponsorshipId);
 }
