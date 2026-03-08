@@ -29,3 +29,14 @@ user-account-inventor-07,true,"UserIdentity{name: 'Inventor7', surname: 'Acme', 
 user-account-inventor-08,true,"UserIdentity{name: 'Inventor8', surname: 'Acme', email: 'inventor8@acme.com'}",inventor8,inventor8
 user-account-inventor-09,true,"UserIdentity{name: 'Inventor9', surname: 'Acme', email: 'inventor9@acme.com'}",inventor9,inventor9
 user-account-inventor-10,true,"UserIdentity{name: 'Inventor10', surname: 'Acme', email: 'inventor10@acme.com'}",inventor10,inventor10
+#spokesperson
+user-account-spokesperson-01,true,"UserIdentity{name: 'Spokesperson1', surname: 'spokesperson', email: 'spokesperson1@acme.com'}",spokesperson1,spokesperson1
+user-account-spokesperson-02,true,"UserIdentity{name: 'Spokesperson2', surname: 'spokesperson', email: 'spokesperson2@acme.com'}",spokesperson2,spokesperson2
+user-account-spokesperson-03,true,"UserIdentity{name: 'Spokesperson3', surname: 'spokesperson', email: 'spokesperson3@acme.com'}",spokesperson3,spokesperson3
+user-account-spokesperson-04,true,"UserIdentity{name: 'Spokesperson4', surname: 'spokesperson', email: 'spokesperson4@acme.com'}",spokesperson4,spokesperson4
+user-account-spokesperson-05,true,"UserIdentity{name: 'Spokesperson5', surname: 'spokesperson', email: 'spokesperson5@acme.com'}",spokesperson5,spokesperson5
+user-account-spokesperson-06,true,"UserIdentity{name: 'Spokesperson6', surname: 'spokesperson', email: 'spokesperson6@acme.com'}",spokesperson6,spokesperson6
+user-account-spokesperson-07,true,"UserIdentity{name: 'Spokesperson7', surname: 'spokesperson', email: 'spokesperson7@acme.com'}",spokesperson7,spokesperson7       
+user-account-spokesperson-08,true,"UserIdentity{name: 'Spokesperson8', surname: 'spokesperson', email: 'spokesperson8@acme.com'}",spokesperson8,spokesperson8
+user-account-spokesperson-09,true,"UserIdentity{name: 'Spokesperson9', surname: 'spokesperson', email: 'spokesperson9@acme.com'}",spokesperson9,spokesperson9
+user-account-spokesperson-10,true,"UserIdentity{name: 'Spokesperson10', surname: 'spokesperson', email: 'spokesperson10@acme.com'}",spokesperson10,spokesperson10
