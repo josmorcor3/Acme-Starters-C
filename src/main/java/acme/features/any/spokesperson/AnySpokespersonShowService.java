@@ -1,22 +1,22 @@
 
-package acme.features.any.milestone;
+package acme.features.any.spokesperson;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
-import acme.entities.campaigns.Milestone;
+import acme.realms.Spokesperson;
 
 @Service
-public class AnyMilestoneShowService extends AbstractService<Any, Milestone> {
+public class AnySpokespersonShowService extends AbstractService<Any, Spokesperson> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyMilestoneRepository	repository;
+	private AnySpokespersonRepository	repository;
 
-	private Milestone				milestone;
+	private Spokesperson				spokesperson;
 
 	// AbstractService interface -------------------------------------------
 
@@ -26,22 +26,20 @@ public class AnyMilestoneShowService extends AbstractService<Any, Milestone> {
 		int id;
 
 		id = super.getRequest().getData("id", int.class);
-		this.milestone = this.repository.findMilestoneById(id);
+		this.spokesperson = this.repository.findSpokespersonById(id);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.milestone != null && !this.milestone.getCampaign().getDraftMode();
-		;
+		status = this.spokesperson != null;
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.milestone, "title", "achievements", "effort", "kind");
+		super.unbindObject(this.spokesperson, "cv", "achievements", "licensed");
 	}
-
 }
