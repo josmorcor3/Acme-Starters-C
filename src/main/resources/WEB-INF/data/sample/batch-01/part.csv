@@ -1,0 +1,28 @@
+key,name,description,cost,kind,key:invention
+# base entity
+part-01,"Part name","Description of part",EUR 100.00,CORE,invention-01
+# name - standard variations
+part-02,"P","Description of part",EUR 100.00,CORE,invention-01
+part-03,"P2","Description of part",EUR 100.00,CORE,invention-01
+part-04,"Part name-Part name-Part name-Part name-Part name-Part name-Part name-Part","Description of part",EUR 100.00,CORE,invention-01
+part-05,"Part name-Part name-Part name-Part name-Part name-Part name-Part name-Part2","Description of part",EUR 100.00,CORE,invention-01
+# name - no singular values
+# description - standard variations
+part-06,"Part name","D",EUR 100.00,CORE,invention-01
+part-07,"Part name","D2",EUR 100.00,CORE,invention-01
+part-08,"Part name","Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description123",EUR 100.00,CORE,invention-01
+part-09,"Part name","Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description1234",EUR 100.00,CORE,invention-01
+# description - no singular values
+# cost - standard variations
+part-10,"Part name","Description of part",EUR 0.00,CORE,invention-02
+part-11,"Part name","Description of part",EUR 0.01,CORE,invention-02
+part-12,"Part name","Description of part",EUR 999999.99,CORE,invention-02
+part-13,"Part name","Description of part",EUR 1000000.00,CORE,invention-03
+# cost - no singular values
+# kind - standard variations
+part-14,"Part name","Description of part",EUR 100.00,MANDATORY,invention-01
+part-15,"Part name","Description of part",EUR 100.00,OPTIONAL,invention-01
+# kind - no singular values
+# invention - standard variations
+part-16,"Part name","Description of part",EUR 100.00,CORE,invention-04
+# invention - no singular values
