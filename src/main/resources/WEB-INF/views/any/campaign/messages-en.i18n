@@ -9,8 +9,21 @@
 # they accept any liabilities with respect to them.
 
 
-any.campaign.list.title = Listing of inventions
+any.campaign.list.title = Listing of campaigns
+any.campaign.form.title = Campaign form
 
+
+any.campaign.form.label.ticker = Ticker:
+any.campaign.form.label.name = Name:
+any.campaign.form.label.description = Description:
+any.campaign.form.label.startMoment = Start time:
+any.campaign.form.label.endMoment = End time:
+any.campaign.form.label.moreInfo = More info: (Optional)
+any.campaign.form.label.monthsActive = Active months:
+any.campaign.form.label.effort = Effort:
+
+any.campaign.form.button.milestones = Milestones
+any.campaign.form.button.spokesperson = Spokesperson
 
 any.campaign.list.label.ticker = Ticker 
 any.campaign.list.label.name = Name
