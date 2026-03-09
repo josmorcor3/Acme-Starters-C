@@ -19,5 +19,5 @@
 	<acme:form-textbox code="any.tactic.form.label.name" path="name"/>
 	<acme:form-textarea code="any.tactic.form.label.notes" path="notes"/>
 	<acme:form-double code="any.tactic.form.label.expectedPercentage" path="expectedPercentage"/>
-	<acme:form-textbox code="any.tactic.form.label.kind" path="kind"/>
+	<acme:form- code="any.tactic.form.label.kind" path="kind"/>
 </acme:form>

@@ -20,6 +20,8 @@ any.strategy.form.label.startMoment = Momento de incio:
 any.strategy.form.label.endMoment = Momento de fin:
 any.strategy.form.label.moreInfo = Más información (optional):
 
+any.strategy.form.button.tactic = Tácticas
+any.strategy.form.button.fundraiser = Recaudador de fondos
 
 any.strategy.list.label.name = Nombre:
 any.strategy.list.label.ticker = Referencia:

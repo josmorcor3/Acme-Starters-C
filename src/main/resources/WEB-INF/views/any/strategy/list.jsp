@@ -19,7 +19,7 @@
 	<acme:list-column code="any.strategy.list.label.ticker" path="ticker" width="20%"/>
 	<acme:list-column code="any.strategy.list.label.name" path="name" width="30%"/>
 	<acme:list-column code="any.strategy.list.label.monthsActive" path="monthsActive" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.expectedPorcentage" path="expectedPorcentage" width="20%"/>
+	<acme:list-column code="any.strategy.list.label.expectedPercentage" path="expectedPercentage" width="20%"/>
 	<acme:list-hidden path="fundraiser.name"/>
 	<acme:list-hidden path="description"/>
 	<acme:list-hidden path="startMoment"/>
