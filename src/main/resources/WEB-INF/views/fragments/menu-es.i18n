@@ -13,6 +13,7 @@
 master.menu.anonymous = Anónimo
 master.menu.anonymous.list-inventions = Ver invenciones
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.list-strategies = Ver estrategias
 
 # master.menu.administrator ###################################################
 
