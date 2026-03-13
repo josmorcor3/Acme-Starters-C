@@ -13,6 +13,8 @@ any.fundraiser.form.title = Detalles del recuadador de fondos
 any.fundraiser.form.label.bank = Banco:
 any.fundraiser.form.label.statement = Declaración:
 any.fundraiser.form.label.agent = Agente:
+any.fundraiser.form.label.fullName = Nombre completo:
+any.fundraiser.form.label.email = Correo:
 
 
 

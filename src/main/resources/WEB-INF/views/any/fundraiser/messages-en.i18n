@@ -13,6 +13,8 @@ any.fundraiser.form.title = Fundraiser details
 any.fundraiser.form.label.bank = Bank:
 any.fundraiser.form.label.statement = Statement:
 any.fundraiser.form.label.agent = Agent:
+any.fundraiser.form.label.fullName = Full name:
+any.fundraiser.form.label.email = Email:
 
 
 

@@ -36,7 +36,7 @@ public class AnyStrategyListService extends AbstractService<Any, Strategy> {
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.strategies, //
-			"ticker", "name", "monthsActive", "expectedPercentage");
+			"ticker", "name", "fundraiser.userAccount.identity.name", "expectedPercentage");
 	}
 
 }

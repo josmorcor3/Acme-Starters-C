@@ -19,7 +19,7 @@ public interface AnyTacticRepository extends AbstractRepository {
 	@Query("select t from Tactic t where t.strategy.id = :id ")
 	Collection<Tactic> findTacticsByStrategyId(int id);
 
-	@Query("select s from Strategy where s.id = :strategyId")
+	@Query("select s from Strategy s where s.id = :strategyId")
 	Strategy findStrategyById(int strategyId);
 
 }

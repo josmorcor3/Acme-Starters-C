@@ -40,7 +40,8 @@ public class AnyFundraiserShowService extends AbstractService<Any, Fundraiser> {
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.fundraiser, "bank", "statement", "agent");
+		super.unbindObject(this.fundraiser, "bank", "statement", "agent", "userAccount.identity.fullName", "userAccount.identity.email");
+
 	}
 
 }

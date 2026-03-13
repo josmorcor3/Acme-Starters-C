@@ -25,7 +25,7 @@ any.strategy.form.button.fundraiser = Fundraiser
 
 any.strategy.list.label.name = Name:
 any.strategy.list.label.ticker = Ticker:
-any.strategy.list.label.monthsActive = Months active:
+any.strategy.list.label.fundraiser = Fundraiser:
 any.strategy.list.label.expectedPercentage = Expected percentage:
 
 
