@@ -15,4 +15,7 @@ public interface FundraiserStrategyRepository extends AbstractRepository {
 	@Query("select s from Strategy s where s.fundraiser.id = :fundraiserId")
 	Collection<Strategy> findStrategiesByFundraiserId(int fundraiserId);
 
+	@Query("select s from Strategy s where s.id = :strategyId")
+	Strategy findStrategyById(int strategyId);
+
 }

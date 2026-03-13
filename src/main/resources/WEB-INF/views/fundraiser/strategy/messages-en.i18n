@@ -21,6 +21,10 @@ fundraiser.strategy.form.label.endMoment = End moment:
 fundraiser.strategy.form.label.moreInfo = More info (optional):
 
 fundraiser.strategy.form.button.tactic = Tactics
+fundraiser.strategy.form.button.update = Update
+fundraiser.strategy.form.button.delete = Delete
+fundraiser.strategy.form.button.create = Create
+fundraiser.strategy.form.button.publish = Publish
 
 fundraiser.strategy.list.label.name = Name:
 fundraiser.strategy.list.label.ticker = Ticker:
