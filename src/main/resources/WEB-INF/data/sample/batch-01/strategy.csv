@@ -43,8 +43,11 @@ strategy-34,TK00-abc30,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dol
 strategy-35,TK00-abc31,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,,false,fundraiser-01
 #draft-mode 
 strategy-36,TK00-abc32,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,fundraiser-01
+strategy-37,TK00-abc33,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,fundraiser-01
+strategy-38,TK00-abc34,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,fundraiser-02
+strategy-39,TK00-abc35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,fundraiser-02
 #fundraiser
-strategy-37,TK00-abc33,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-02
+strategy-40,TK00-abc36,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,fundraiser-02
 
 
  

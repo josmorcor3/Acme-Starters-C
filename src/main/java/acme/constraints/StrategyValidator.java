@@ -52,7 +52,7 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 
 				Long count = this.repository.findTacticsByStrategy(strategy.getId());
 				Long tactics = count == null ? 0 : count;
-				hasTactics = strategy.getDraftMode() || tactics > 0;
+				hasTactics = Boolean.TRUE.equals(strategy.getDraftMode()) || tactics > 0; // pongo el boolean true porque he puesto un dato en errata con el draftmode en null y salta
 
 				super.state(context, hasTactics, "*", "acme.validation.strategy.published-without-tactics.message");
 			}
