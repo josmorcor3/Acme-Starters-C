@@ -18,11 +18,18 @@
 
 <acme:menu-bar>
 	<acme:menu-left>
+	
+		<%-- FUNDRAISER --%>
+		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
+			<acme:menu-suboption code="master.menu.fundraiser.my-strategies" action="/fundraiser/strategy/list"/>
+		
+		</acme:menu-option>
+	
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
 		
 		</acme:menu-option>
 
