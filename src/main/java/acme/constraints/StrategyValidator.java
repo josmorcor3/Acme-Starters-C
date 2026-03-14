@@ -61,7 +61,7 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 				if (strategy.getStartMoment() != null && strategy.getEndMoment() != null) {
 					startMomentIsBeforeEndMoment = MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment());
 
-					super.state(context, startMomentIsBeforeEndMoment, "endMoment", "acme.validation.invalid-time-interval.message");
+					super.state(context, startMomentIsBeforeEndMoment, "*", "acme.validation.invalid-time-interval.message");
 				}
 
 			}

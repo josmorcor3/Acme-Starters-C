@@ -31,5 +31,6 @@ fundraiser.strategy.list.label.ticker = Ticker:
 fundraiser.strategy.list.label.expectedPercentage = Expected percentage:
 fundraiser.strategy.list.label.draftMode = Is in draft mode: 
 
+fundraiser.strategy.list.button.create = Create
 
 

@@ -27,3 +27,5 @@
 	<acme:list-hidden path="monthsActive"/>
 
 </acme:list>
+
+<acme:button code="fundraiser.strategy.list.button.create" action="/fundraiser/strategy/create"/>

@@ -19,17 +19,23 @@
 	<acme:form-textbox code="fundraiser.strategy.form.label.ticker" path="ticker"/>
 	<acme:form-textbox code="fundraiser.strategy.form.label.name" path="name"/>
 	<acme:form-textarea code="fundraiser.strategy.form.label.description" path="description"/>
-	<acme:form-double code="fundraiser.strategy.form.label.startMoment" path="startMoment"/>
-	<acme:form-textbox code="fundraiser.strategy.form.label.endMoment" path="endMoment"/>
-	<acme:form-textbox code="fundraiser.strategy.form.label.moreInfo" path="moreInfo"/>
-	<acme:form-textbox code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
-	<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+	<acme:form-moment code="fundraiser.strategy.form.label.startMoment" path="startMoment"/>
+	<acme:form-moment code="fundraiser.strategy.form.label.endMoment" path="endMoment"/>
+	<acme:form-url code="fundraiser.strategy.form.label.moreInfo" path="moreInfo"/>
 	
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">
+			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
+			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+			
 			<acme:button code="fundraiser.strategy.form.button.tactic" action="/strategy/tactic/list?strategyId=${id}"/>
+			
 		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
+			
+			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
+			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+			
 			<acme:button code="fundraiser.strategy.form.button.tactic" action="/strategy/tactic/list?strategyId=${id}"/>
 			<acme:submit code="fundraiser.strategy.form.button.update" action="/fundraiser/strategy/update"/>
 			<acme:submit code="fundraiser.strategy.form.button.delete" action="/fundraiser/strategy/delete"/>
