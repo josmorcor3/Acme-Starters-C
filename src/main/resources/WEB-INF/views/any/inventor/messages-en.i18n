@@ -10,6 +10,8 @@
 
 any.inventor.form.title = Details of inventor
 
+any.inventor.form.label.fullName = Name:
+any.inventor.form.label.email = E-mail:
 any.inventor.form.label.bio = Biography:
 any.inventor.form.label.keyWords = Key words:
 any.inventor.form.label.licensed = Licensed:
