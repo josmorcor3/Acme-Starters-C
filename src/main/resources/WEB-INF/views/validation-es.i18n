@@ -20,3 +20,5 @@ acme.validation.invalid-time-interval.message = El intervalo de tiempo debe esta
 acme.validation.invalid-currency.message = La divisa de la moneda debe ser euros
 
 acme.validation.invention.published-without-parts.message = Una invención no puede ser publicada a no ser que tenga al menos una parte
+acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
+acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica

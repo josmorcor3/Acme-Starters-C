@@ -20,3 +20,5 @@ acme.validation.invalid-time-interval.message = The time interval must be in the
 acme.validation.invalid-currency.message = Money currency must be euros
 
 acme.validation.invention.published-without-parts.message = Inventions cannot be published unless they have at least one part
+acme.validation.sponsorship.published-without-donations.message = Sponsorships cannot be published unless they have at least one donation
+acme.validation.strategy.published-without-tactics.message = A strategy cannot be published unless it has at least one tactic 
