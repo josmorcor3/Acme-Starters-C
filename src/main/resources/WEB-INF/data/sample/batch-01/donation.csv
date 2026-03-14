@@ -14,15 +14,15 @@ donation-08,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit ame
 donation-09,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur ,adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",EUR 100.00,ALTRUIST,sponsorship-01
 # notes - no singular values
 # money - standard variations
-donation-10,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adip,iscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 0.00,ALTRUIST,sponsorship-01
-donation-11,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 0.01,ALTRUIST,sponsorship-01
-donation-12,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adip,iscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 999999.99,ALTRUIST,sponsorship-01
-donation-13,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 1000000.00,ALTRUIST,sponsorship-01
+donation-10,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adip,iscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 0.00,ALTRUIST,sponsorship-02
+donation-11,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 0.01,ALTRUIST,sponsorship-02
+donation-12,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adip,iscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 999999.99,ALTRUIST,sponsorship-02
+donation-13,"Lorem ipsum dolor sit amet consectetur,","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 1000000.00,ALTRUIST,sponsorship-03
 # money - no singular values
 # kind - standard variations
 donation-14,"Lorem ipsum dolor sit amet consectetu,r","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 100.00,REWARDED,sponsorship-01
 donation-15,"Lorem ipsum dolor sit amet consectet,ur","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 100.00,CELEBRATED,sponsorship-01
 # kind - no singular values
 # sponsorship - standard variations
-donation-16,"Lorem ipsum dolor sit amet consectetu,r","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 100.00,ALTRUIST,sponsorship-02
+donation-16,"Lorem ipsum dolor sit amet consectetu,r","Lorem ipsum dolor sit amet consectetur adi,piscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 100.00,ALTRUIST,sponsorship-04
 # sponsorship - no singular values

@@ -4,9 +4,12 @@ package acme.features.any.donation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
+import acme.entities.sponsorships.DonationKind;
 
 @Service
 public class AnyDonationShowService extends AbstractService<Any, Donation> {
@@ -41,7 +44,12 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.donation, "name", "notes", "money", "kind");
+		SelectChoices choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
+
+		Tuple tuple = super.unbindObject(this.donation, "name", "notes", "money", "kind");
+
+		tuple.put("kind", choices.getSelected().getKey());
+		tuple.put("kinds", choices);
 	}
 
 }
