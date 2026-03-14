@@ -45,3 +45,6 @@ master.menu.user-account.consumer-profile = Consumer profile
 # fundraiser
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
+# sponsor
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
