@@ -1,0 +1,16 @@
+key,key:user-account,bio,key-words,licensed
+# base entity
+inventor-01,,"",,
+# bio - standard variations
+inventor-02,,,key-word1_key-word2_key-word3,false
+inventor-03,,"",key-word1_key-word2_key-word3,false
+inventor-04,,"Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor-Bio of inventor2",key-word1_key-word2_key-word3,false
+# bio - no singular values
+# key-words - standard variations
+inventor-05,,"Bio of inventor",,false
+inventor-06,,"Bio of inventor","",false
+inventor-07,,"Bio of inventor","key-word1_key-word2_key-word3_key-word4_key-word5_key-word6_key-word7_key-word8_key-word9_key-word10_key-word11_key-word12_key-word13_key-word14_key-word15_key-word16_key-word17_key-word18_key-word19_key-word20_key-word21_key-word22_key-word23_key-word24-k",false
+# key-words - no singular values
+# licensed - standard variations
+inventor-9,,"Bio of inventor","key-word1_key-word2_key-word3",
+# licensed - no singular values
