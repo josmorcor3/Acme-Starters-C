@@ -1,7 +1,7 @@
 
 package acme.entities.strategies;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -22,6 +22,7 @@ import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidStrategy;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Fundraiser;
@@ -31,6 +32,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidStrategy
 public class Strategy extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
@@ -76,18 +78,23 @@ public class Strategy extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Mandatory
+	@Valid
 	@Transient
 	@Autowired
 	private StrategyRepository	repository;
 
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		double months = duration.toDays() / 30.;
-		return Math.round(months * 10) / 10.0;
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return Math.round(months * 10) / 10.;
 	}
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getExpectedPercentage() {
 		Double result;
