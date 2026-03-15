@@ -1,0 +1,24 @@
+key,name,description,cost,kind,key:invention
+# base entity
+part-01,"","",,,
+# name - standard variations
+part-02,,"Description of part",EUR 100.00,CORE,invention-03
+part-03,"","Description of part",EUR 100.00,CORE,invention-03
+part-04,"Part name-Part name-Part name-Part name-Part name-Part name-Part name-Part22","Description of part",EUR 100.00,CORE,invention-03
+# name - no singular values
+# description - standard variations
+part-05,"Part name",,EUR 100.00,CORE,invention-03
+part-06,"Part name","",EUR 100.00,CORE,invention-03
+part-07,"Part name","Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of part-Description of a",EUR 100.00,CORE,invention-03
+# description - no singular values
+# cost - standard variations
+part-10,"Part name","Description of part",,CORE,invention-03
+part-11,"Part name","Description of part",EUR -0.01,CORE,invention-03
+part-12,"Part name","Description of part",EUR 1000000.01,CORE,invention-03
+# cost - no singular values
+# kind - standard variations
+part-14,"Part name","Description of part",EUR 100.00,,invention-03
+# kind - no singular values
+# invention - standard variations
+part-16,"Part name","Description of part",EUR 100.00,CORE,
+# invention - no singular values
