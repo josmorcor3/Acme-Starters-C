@@ -25,16 +25,16 @@
 	
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">
-			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
-			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
+			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage" readonly="true"/>
 			
 			<acme:button code="fundraiser.strategy.form.button.tactic" action="/fundraiser/tactic/list?strategyId=${id}"/>
 			
 		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
 			
-			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
-			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+			<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
+			<acme:form-textbox code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage" readonly="true"/>
 			
 			<acme:button code="fundraiser.strategy.form.button.tactic" action="/fundraiser/tactic/list?strategyId=${id}"/>
 			<acme:submit code="fundraiser.strategy.form.button.update" action="/fundraiser/strategy/update"/>

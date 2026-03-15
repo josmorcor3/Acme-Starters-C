@@ -49,7 +49,12 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+	
 	</acme:menu-left>
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
+	</acme:menu-option>
 
 	<acme:menu-right>		
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
