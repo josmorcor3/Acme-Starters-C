@@ -67,9 +67,13 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			}
 
 			{
-				boolean correctCurrency;
+				boolean correctCurrency = true;
 
-				correctCurrency = this.repository.computeSponsorshipCurrencies(sponsorship.getId()).stream().allMatch(c -> c.equals("EUR"));
+				for (String c : this.repository.computeSponsorshipCurrencies(sponsorship.getId()))
+					if (!c.equals("EUR")) {
+						correctCurrency = false;
+						break;
+					}
 
 				super.state(context, correctCurrency, "money", "acme.validation.invalid-currency.message");
 			}
