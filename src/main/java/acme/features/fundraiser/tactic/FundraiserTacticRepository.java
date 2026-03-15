@@ -14,7 +14,7 @@ import acme.entities.strategies.Tactic;
 public interface FundraiserTacticRepository extends AbstractRepository {
 
 	@Query("select t from Tactic t where t.id = :id")
-	Tactic getTacticById(int id);
+	Tactic findTacticById(int id);
 
 	@Query("select t from Tactic t where t.strategy.id = :id ")
 	Collection<Tactic> findTacticsByStrategyId(int id);
