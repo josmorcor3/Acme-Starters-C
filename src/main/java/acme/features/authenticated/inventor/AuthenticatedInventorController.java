@@ -1,17 +1,17 @@
 
-package acme.features.any.inventor;
+package acme.features.authenticated.inventor;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 
-import acme.client.components.principals.Any;
+import acme.client.components.principals.Authenticated;
 import acme.client.controllers.AbstractController;
 import acme.realms.Inventor;
 
 @Controller
-public class AnyInventorController extends AbstractController<Any, Inventor> {
+public class AuthenticatedInventorController extends AbstractController<Authenticated, Inventor> {
 
 	// Constructors -----------------------------------------------------------
 
@@ -19,7 +19,8 @@ public class AnyInventorController extends AbstractController<Any, Inventor> {
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
 
-		super.addBasicCommand("show", AnyInventorShowService.class);
+		super.addBasicCommand("create", AuthenticatedInventorCreateService.class);
+		super.addBasicCommand("update", AuthenticatedInventorUpdateService.class);
 	}
 
 }
