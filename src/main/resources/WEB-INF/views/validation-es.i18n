@@ -16,5 +16,6 @@ acme.validation.ticker.message				= La referencia debe comenzar con dos letras m
 acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
 
 acme.validation.invalid-time-interval.message = El momento de inicio debe ir antes que el momento de fin
+
 acme.validation.startMoment-is-not-in-the-future = El momento de inicio debe estar en el futuro  
 acme.validation.endMoment-is-not-in-the-future = El momento de fin debe estar en el futuro  
