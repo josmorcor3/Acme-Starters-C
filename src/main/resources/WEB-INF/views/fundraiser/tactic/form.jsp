@@ -29,7 +29,8 @@
 		
 		<jstl:when test="${_command == 'create'}">
 			<acme:submit code="fundraiser.tactic.form.button.create" action="/fundraiser/tactic/create?strategyId=${strategyId}"/>
-		</jstl:when>		
+		</jstl:when>
+				
 	</jstl:choose>
 	
 
