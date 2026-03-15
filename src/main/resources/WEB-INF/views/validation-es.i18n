@@ -13,5 +13,4 @@ acme.validation.text.message   		= Debe tener entre 1 y 255 caracteres
 
 acme.validation.duplicated-ticker.message	= Referencia ya usada
 acme.validation.ticker.message				= La referencia debe comenzar con dos letras mayúsculas y dos dígitos, seguido de un guion y de 5 a 10 letras, dígitos o guiones bajos
-acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
-acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
+acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a menos que tenga un hito
