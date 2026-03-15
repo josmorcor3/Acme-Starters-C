@@ -22,13 +22,13 @@
 	<acme:form-select code="fundraiser.tactic.form.label.kind" path="kind" choices="${kinds}"/>
 
 	<jstl:choose>	 
-		<jstl:when test="${draftMode}">
+		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && draftMode == true}">
 			<acme:submit code="fundraiser.tactic.form.button.update" action="/fundraiser/tactic/update"/>
 			<acme:submit code="fundraiser.tactic.form.button.delete" action="/fundraiser/tactic/delete"/>
 		</jstl:when>
 		
 		<jstl:when test="${_command == 'create'}">
-			<acme:submit code="fundraiser.tactic.form.button.create" action="/fundraiser/tactic/create"/>
+			<acme:submit code="fundraiser.tactic.form.button.create" action="/fundraiser/tactic/create?strategyId=${strategyId}"/>
 		</jstl:when>		
 	</jstl:choose>
 	
