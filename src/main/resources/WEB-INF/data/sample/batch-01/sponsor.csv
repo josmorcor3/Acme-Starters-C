@@ -1,0 +1,17 @@
+key,key:userAccount,address,im,gold
+# base entity
+sponsor-01,user-account-sponsor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet consectetur",false
+# address - standard variations
+sponsor-02,user-account-sponsor-02,"L","Lorem ipsum dolor sit amet, consectetur",false
+sponsor-03,user-account-sponsor-03,"Lo","Lorem ipsum dolor sit amet, consectetur",false
+sponsor-04,user-account-sponsor-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","Lorem ipsum dolor sit amet consectetur",false
+sponsor-05,user-account-sponsor-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*","Lorem ipsum dolor sit amet consectetur",false
+# address - no singular values
+# im - standard variations
+sponsor-06,user-account-sponsor-06,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","L",false
+sponsor-07,user-account-sponsor-07,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lo",false
+sponsor-08,user-account-sponsor-08,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",false
+sponsor-09,user-account-sponsor-09,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",false
+# im - no singular values
+# gold - standard variations
+sponsor-10,user-account-sponsor-10,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet consectetur",true
