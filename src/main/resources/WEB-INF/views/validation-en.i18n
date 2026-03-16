@@ -14,9 +14,8 @@ acme.validation.text.message   		= Must have from 1 to 255 characters
 acme.validation.duplicated-ticker.message	= The ticker is duplicated
 acme.validation.ticker.message				= The ticker must start with two uppercase letters and two digits, followed by a hyphen and 5 to 10 letters, digits, or underscores
 
-acme.validation.null-start-moment.message = It must have a non-null start moment
-acme.validation.null-end-moment.message = It must have a non-null end moment
-acme.validation.invalid-time-interval.message = The time interval must be in the future with respect to the time when it is published
+acme.validation.already-published.message = It is already published
+acme.validation.invalid-time-interval.message = Start moment must be before end moment
 acme.validation.invalid-currency.message = Money currency must be euros
 
 acme.validation.invention.published-without-parts.message = Inventions cannot be published unless they have at least one part

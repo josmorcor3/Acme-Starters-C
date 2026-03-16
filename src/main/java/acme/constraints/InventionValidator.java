@@ -46,14 +46,6 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 				super.state(context, uniqueInvention, "ticker", "acme.validation.duplicated-ticker.message");
 			}
 			{
-				boolean publishedInventionHasAtLeastOnePart;
-				Long numberOfParts = this.repository.computeInventionParts(invention.getId());
-
-				publishedInventionHasAtLeastOnePart = invention.getDraftMode() || numberOfParts > 0;
-
-				super.state(context, publishedInventionHasAtLeastOnePart, "*", "acme.validation.invention.published-without-parts.message");
-			}
-			{
 				boolean startMomentIsBeforeEndMoment;
 
 				if(invention.getStartMoment() != null && invention.getEndMoment() != null) {
