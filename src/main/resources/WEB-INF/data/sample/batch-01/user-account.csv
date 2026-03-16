@@ -50,3 +50,14 @@ user-account-spokesperson-07,true,"UserIdentity{name: 'Spokesperson7', surname: 
 user-account-spokesperson-08,true,"UserIdentity{name: 'Spokesperson8', surname: 'spokesperson', email: 'spokesperson8@acme.com'}",spokesperson8,spokesperson8
 user-account-spokesperson-09,true,"UserIdentity{name: 'Spokesperson9', surname: 'spokesperson', email: 'spokesperson9@acme.com'}",spokesperson9,spokesperson9
 user-account-spokesperson-10,true,"UserIdentity{name: 'Spokesperson10', surname: 'spokesperson', email: 'spokesperson10@acme.com'}",spokesperson10,spokesperson10
+# auditor
+user-account-auditor-01,true,"UserIdentity{name: 'Auditor1', surname: 'Acme', email: 'auditor1@acme.com'}",auditor1,auditor1
+user-account-auditor-02,true,"UserIdentity{name: 'Auditor2', surname: 'Acme', email: 'auditor2@acme.com'}",auditor2,auditor2
+user-account-auditor-03,true,"UserIdentity{name: 'Auditor3', surname: 'Acme', email: 'auditor3@acme.com'}",auditor3,auditor3
+user-account-auditor-04,true,"UserIdentity{name: 'Auditor4', surname: 'Acme', email: 'auditor4@acme.com'}",auditor4,auditor4
+user-account-auditor-05,true,"UserIdentity{name: 'Auditor5', surname: 'Acme', email: 'auditor5@acme.com'}",auditor5,auditor5
+user-account-auditor-06,true,"UserIdentity{name: 'Auditor6', surname: 'Acme', email: 'auditor6@acme.com'}",auditor6,auditor6
+user-account-auditor-07,true,"UserIdentity{name: 'Auditor7', surname: 'Acme', email: 'auditor7@acme.com'}",auditor7,auditor7
+user-account-auditor-08,true,"UserIdentity{name: 'Auditor8', surname: 'Acme', email: 'auditor8@acme.com'}",auditor8,auditor8
+user-account-auditor-09,true,"UserIdentity{name: 'Auditor9', surname: 'Acme', email: 'auditor9@acme.com'}",auditor9,auditor9
+user-account-auditor-10,true,"UserIdentity{name: 'Auditor10', surname: 'Acme', email: 'auditor10@acme.com'}",auditor10,auditor10
