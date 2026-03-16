@@ -52,4 +52,7 @@ master.menu.user-account.fundraiser-profile = Perfil de recaudador de fondos
 # sponsor
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
+# spokesperson
+master.menu.user-account.become-spokesperson = Hazte portavoz
+master.menu.user-account.spokesperson-profile = Perfil de portavoz
 
