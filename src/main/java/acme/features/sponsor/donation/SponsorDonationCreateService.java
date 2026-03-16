@@ -35,10 +35,9 @@ public class SponsorDonationCreateService extends AbstractService<Sponsor, Donat
 		this.donation = super.newObject(Donation.class);
 		this.donation.setName("");
 		this.donation.setNotes("");
-		Money money = new Money();
-		money.setAmount(0.00);
-		money.setCurrency("EUR");
-		this.donation.setMoney(money);
+		this.donation.setMoney(super.newObject(Money.class));
+		this.donation.getMoney().setAmount(0.);
+		this.donation.getMoney().setCurrency("EUR");
 		this.donation.setSponsorship(sponsorship);
 	}
 

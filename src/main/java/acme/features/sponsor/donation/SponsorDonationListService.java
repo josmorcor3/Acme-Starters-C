@@ -36,7 +36,10 @@ public class SponsorDonationListService extends AbstractService<Sponsor, Donatio
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status;
+		status = this.sponsorship != null && this.sponsorship.getSponsor().isPrincipal();
+
+		super.setAuthorised(status);
 	}
 
 	@Override

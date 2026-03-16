@@ -51,7 +51,7 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 				Long count = this.repository.findDonationsBySponsorshipId(sponsorship.getId());
 				Long donations = count == null ? 0 : count;
-				hasDonations = Boolean.TRUE.equals(sponsorship.getDraftMode()) || donations > 0;
+				hasDonations = Boolean.TRUE.equals(sponsorship.getDraftMode()) && donations > 0;
 
 				super.state(context, hasDonations, "*", "acme.validation.sponsorship.published-without-donations.message");
 			}
