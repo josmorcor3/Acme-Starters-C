@@ -17,5 +17,5 @@ acme.validation.strategy.published-without-tactics.message = A strategy cannot b
 
 acme.validation.invalid-time-interval.message = Start moment must be before end moment
 
-acme.validation.startMoment-is-not-in-the-future = Start moment must be in the future 
-acme.validation.endMoment-is-not-in-the-future = End moment must be in the future
+acme.validation.startMoment-is-not-in-the-future.message = Start moment must be in the future 
+acme.validation.endMoment-is-not-in-the-future.message = End moment must be in the future

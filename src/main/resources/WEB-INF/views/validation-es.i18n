@@ -17,5 +17,5 @@ acme.validation.strategy.published-without-tactics.message = Una estrategia no p
 
 acme.validation.invalid-time-interval.message = El momento de inicio debe ir antes que el momento de fin
 
-acme.validation.startMoment-is-not-in-the-future = El momento de inicio debe estar en el futuro  
-acme.validation.endMoment-is-not-in-the-future = El momento de fin debe estar en el futuro  
+acme.validation.startMoment-is-not-in-the-future.message = El momento de inicio debe estar en el futuro  
+acme.validation.endMoment-is-not-in-the-future.message = El momento de fin debe estar en el futuro  

@@ -1,8 +1,6 @@
 
 package acme.features.fundraiser.strategy;
 
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.helpers.MomentHelper;
@@ -49,19 +47,17 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 	public void validate() {
 		super.validateObject(this.strategy);
 
-		Date now = new Date();
-
 		// validamos que START MOMENT esté en el futuro en el momento de creación
 		boolean startMomentIsInFuture;
-		startMomentIsInFuture = MomentHelper.isAfter(this.strategy.getStartMoment(), now);
+		startMomentIsInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
 
-		super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
+		super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
 
 		// validamos que END MOMENT esté en el futuro en el momento de creación
 		boolean endMomentIsInFuture;
-		endMomentIsInFuture = MomentHelper.isAfter(this.strategy.getEndMoment(), now);
+		endMomentIsInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
 
-		super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
+		super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
 
 		boolean hasTactics;
 
