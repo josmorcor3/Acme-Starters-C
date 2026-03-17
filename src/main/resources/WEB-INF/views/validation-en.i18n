@@ -18,3 +18,5 @@ acme.validation.strategy.published-without-tactics.message = A strategy cannot b
 
 acme.validation.already-published.message = It is already published
 acme.validation.invalid-time-interval.message = Start moment must be before end moment
+
+acme.validation.invalid-currency.message = Invalid currency

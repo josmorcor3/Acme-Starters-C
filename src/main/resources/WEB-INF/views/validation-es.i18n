@@ -18,3 +18,5 @@ acme.validation.strategy.published-without-tactics.message = Una estrategia no p
 
 acme.validation.already-published.message = Ya está publicado
 acme.validation.invalid-time-interval.message = El instante de comienzo debe ser anterior al de fin
+
+acme.validation.invalid-currency.message = Moneda incorrecta

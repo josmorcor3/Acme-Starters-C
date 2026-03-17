@@ -4,7 +4,6 @@ package acme.features.sponsor.donation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.datatypes.Money;
 import acme.client.components.models.Tuple;
 import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
@@ -37,9 +36,7 @@ public class SponsorDonationCreateService extends AbstractService<Sponsor, Donat
 		this.donation = super.newObject(Donation.class);
 		this.donation.setName("");
 		this.donation.setNotes("");
-		this.donation.setMoney(super.newObject(Money.class));
-		this.donation.getMoney().setAmount(0.);
-		this.donation.getMoney().setCurrency("EUR");
+
 		this.donation.setSponsorship(sponsorship);
 	}
 

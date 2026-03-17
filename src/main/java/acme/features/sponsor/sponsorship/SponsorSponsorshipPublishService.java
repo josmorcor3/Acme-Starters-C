@@ -1,8 +1,6 @@
 
 package acme.features.sponsor.sponsorship;
 
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -51,24 +49,34 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 	public void validate() {
 		super.validateObject(this.sponsorship);
 
-		Date now = new Date();
+		{
+			boolean isNotPublished;
 
-		boolean startMomentIsInFuture;
-		startMomentIsInFuture = MomentHelper.isAfter(this.sponsorship.getStartMoment(), now);
+			isNotPublished = this.sponsorship.getDraftMode();
 
-		super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
+			super.state(isNotPublished, "*", "acme.validation.already-published.message");
+		}
+		{
+			boolean startMomentIsFuture;
 
-		boolean endMomentIsInFuture;
-		endMomentIsInFuture = MomentHelper.isAfter(this.sponsorship.getEndMoment(), now);
+			startMomentIsFuture = MomentHelper.isFuture(this.sponsorship.getStartMoment());
+			super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+		}
+		{
+			boolean endMomentIsFuture;
 
-		super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
+			endMomentIsFuture = MomentHelper.isFuture(this.sponsorship.getEndMoment());
+			super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+		}
+		{
+			boolean hasAtLeastOnePart;
 
-		boolean hasDonations;
+			Long numberOfParts = this.repository.computeDonationsBySponsorship(this.sponsorship.getId());
 
-		Long count = this.repository.computeDonationsBySponsorship(this.sponsorship.getId());
-		Long donations = count == null ? 0 : count;
-		hasDonations = Boolean.TRUE.equals(this.sponsorship.getDraftMode()) && donations > 0;
-		super.state(hasDonations, "*", "acme.validation.sponsorship.published-without-donations.message");
+			hasAtLeastOnePart = numberOfParts > 0;
+
+			super.state(hasAtLeastOnePart, "*", "acme.validation.sponsorship.published-without-parts.message");
+		}
 	}
 
 	@Override

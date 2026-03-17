@@ -47,35 +47,13 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			}
 
 			{
-				boolean hasDonations;
-
-				Long count = this.repository.findDonationsBySponsorshipId(sponsorship.getId());
-				Long donations = count == null ? 0 : count;
-				hasDonations = Boolean.TRUE.equals(sponsorship.getDraftMode()) && donations > 0;
-
-				super.state(context, hasDonations, "*", "acme.validation.sponsorship.published-without-donations.message");
-			}
-
-			{
 				boolean startMomentIsBeforeEndMoment;
 				if (sponsorship.getStartMoment() != null && sponsorship.getEndMoment() != null) {
 					startMomentIsBeforeEndMoment = MomentHelper.isBefore(sponsorship.getStartMoment(), sponsorship.getEndMoment());
 
-					super.state(context, startMomentIsBeforeEndMoment, "endMoment", "acme.validation.invalid-time-interval.message");
+					super.state(context, startMomentIsBeforeEndMoment, "*", "acme.validation.invalid-time-interval.message");
 				}
 
-			}
-
-			{
-				boolean correctCurrency = true;
-
-				for (String c : this.repository.computeSponsorshipCurrencies(sponsorship.getId()))
-					if (!c.equals("EUR")) {
-						correctCurrency = false;
-						break;
-					}
-
-				super.state(context, correctCurrency, "money", "acme.validation.invalid-currency.message");
 			}
 
 			result = !super.hasErrors(context);
