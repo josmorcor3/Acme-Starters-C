@@ -11,6 +11,7 @@ import acme.realms.Sponsor;
 
 @Service
 public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Sponsorship> {
+
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
@@ -33,7 +34,8 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null;
+		status = this.sponsorship != null && //
+			this.sponsorship.getSponsor().isPrincipal();
 
 		super.setAuthorised(status);
 	}

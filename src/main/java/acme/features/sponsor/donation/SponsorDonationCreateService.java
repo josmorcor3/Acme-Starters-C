@@ -2,6 +2,7 @@
 package acme.features.sponsor.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.components.datatypes.Money;
 import acme.client.components.models.Tuple;
@@ -12,6 +13,7 @@ import acme.entities.sponsorships.DonationKind;
 import acme.entities.sponsorships.Sponsorship;
 import acme.realms.Sponsor;
 
+@Service
 public class SponsorDonationCreateService extends AbstractService<Sponsor, Donation> {
 
 	// Internal state ---------------------------------------------------------

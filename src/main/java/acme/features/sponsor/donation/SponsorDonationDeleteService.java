@@ -2,12 +2,14 @@
 package acme.features.sponsor.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
 import acme.realms.Sponsor;
 
+@Service
 public class SponsorDonationDeleteService extends AbstractService<Sponsor, Donation> {
 
 	// Internal state ---------------------------------------------------------

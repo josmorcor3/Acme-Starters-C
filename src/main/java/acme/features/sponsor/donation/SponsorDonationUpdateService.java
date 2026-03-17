@@ -2,6 +2,7 @@
 package acme.features.sponsor.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
 import acme.client.components.views.SelectChoices;
@@ -10,6 +11,7 @@ import acme.entities.sponsorships.Donation;
 import acme.entities.sponsorships.DonationKind;
 import acme.realms.Sponsor;
 
+@Service
 public class SponsorDonationUpdateService extends AbstractService<Sponsor, Donation> {
 
 	// Internal state ---------------------------------------------------------
@@ -49,7 +51,6 @@ public class SponsorDonationUpdateService extends AbstractService<Sponsor, Donat
 	@Override
 	public void validate() {
 		super.validateObject(this.donation);
-		;
 	}
 
 	@Override

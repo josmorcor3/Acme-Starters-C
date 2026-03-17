@@ -15,3 +15,6 @@ acme.validation.duplicated-ticker.message	= Referencia ya usada
 acme.validation.ticker.message				= La referencia debe comenzar con dos letras mayúsculas y dos dígitos, seguido de un guion y de 5 a 10 letras, dígitos o guiones bajos
 acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
 acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
+
+acme.validation.already-published.message = Ya está publicado
+acme.validation.invalid-time-interval.message = El instante de comienzo debe ser anterior al de fin
