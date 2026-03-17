@@ -71,6 +71,9 @@
 			<%-- sponsor --%>
 			<acme:menu-suboption code="master.menu.user-account.become-sponsor" action="/authenticated/sponsor/create" access="!hasRealm('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.sponsor-profile" action="/authenticated/sponsor/update" access="hasRealm('Sponsor')"/>
+			<%-- sponsor --%>
+			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
+			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
 		</acme:menu-option>
 	</acme:menu-right>
 </acme:menu-bar>

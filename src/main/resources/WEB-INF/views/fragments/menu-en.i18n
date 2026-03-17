@@ -62,3 +62,6 @@ master.menu.user-account.fundraiser-profile = Fundraiser profile
 # sponsor
 master.menu.user-account.become-sponsor = Become a sponsor
 master.menu.user-account.sponsor-profile = Sponsor profile
+# spokesperson
+master.menu.user-account.become-spokesperson = Become a spokesperson
+master.menu.user-account.spokesperson-profile = Spokesperson profile
