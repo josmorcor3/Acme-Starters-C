@@ -48,17 +48,10 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			{
 				boolean startMomentIsBeforeEndMoment;
 
-				if(invention.getStartMoment() != null && invention.getEndMoment() != null) {
-					startMomentIsBeforeEndMoment =  MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
+				if (invention.getStartMoment() != null && invention.getEndMoment() != null) {
+					startMomentIsBeforeEndMoment = MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
 					super.state(context, startMomentIsBeforeEndMoment, "startMoment", "acme.validation.invalid-time-interval.message");
 				}
-			}
-			{
-				boolean correctCurrency;
-
-				correctCurrency = this.repository.computeInventionCurrencies(invention.getId()).stream().allMatch(c -> c.equals("EUR"));
-
-				super.state(context, correctCurrency, "cost", "acme.validation.invalid-currency.message");
 			}
 			result = !super.hasErrors(context);
 		}
