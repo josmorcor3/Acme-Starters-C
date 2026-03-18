@@ -1,7 +1,7 @@
 
 package acme.entities.audits;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,6 +19,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -34,44 +35,44 @@ import lombok.Setter;
 public class Report extends AbstractEntity {
 	// Serialisation version --------------------------------------------------
 
-	private static final long		serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
 	@ValidTicker
 	@Column(unique = true)
-	private String					ticker;
+	private String				ticker;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String					name;
+	private String				name;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String					description;
+	private String				description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date					startMoment;
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date					endMoment;
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String					moreInfo;
+	private String				moreInfo;
 
 	@Mandatory
 	// HINT: @Valid by default.
 	@Column
-	private boolean					draftMode;
+	private boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
@@ -80,13 +81,18 @@ public class Report extends AbstractEntity {
 	private ReportRepository	repository;
 
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		double months = duration.toDays() / 30.;
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.;
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 		return Math.round(months * 10) / 10.;
 	}
 
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	public Integer getHours() {
 		Integer result = this.repository.computeHours(this.getId());

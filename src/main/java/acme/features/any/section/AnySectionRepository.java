@@ -16,7 +16,7 @@ public interface AnySectionRepository extends AbstractRepository {
 	@Query("select r from Report r where r.id = :reportId")
 	Report findReportById(int reportId);
 
-	@Query("select s from Section s where s.id = :id")
+	@Query("select s from Section s where s.id = :sectionId")
 	Section findSectionById(int sectionId);
 
 	@Query("select s from Section s where s.report.id = :reportId")

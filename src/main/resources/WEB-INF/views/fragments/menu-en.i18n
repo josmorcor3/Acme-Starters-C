@@ -56,3 +56,6 @@ master.menu.user-account.sponsor-profile = Sponsor profile
 # spokesperson
 master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
+# auditor
+master.menu.user-account.become-auditor= Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile
