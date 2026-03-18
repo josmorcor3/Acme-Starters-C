@@ -56,4 +56,6 @@ master.menu.user-account.sponsor-profile = Perfil de patrocinador
 # spokesperson
 master.menu.user-account.become-spokesperson = Hazte portavoz
 master.menu.user-account.spokesperson-profile = Perfil de portavoz
-
+# auditor
+master.menu.user-account.become-auditor = Hazte auditor
+master.menu.user-account.auditor-profile = Perfil de auditor

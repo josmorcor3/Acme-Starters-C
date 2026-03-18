@@ -67,6 +67,9 @@
 			<%-- sponsor --%>
 			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
 			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
+			<%-- auditor --%>
+			<acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/auditor/create" access="!hasRealm('Auditor')"/>
+			<acme:menu-suboption code="master.menu.user-account.auditor-profile" action="/authenticated/auditor/update" access="hasRealm('Auditor')"/>
 		</acme:menu-option>
 	</acme:menu-right>
 </acme:menu-bar>
