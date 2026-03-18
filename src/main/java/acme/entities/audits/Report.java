@@ -23,6 +23,7 @@ import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidReport;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Auditor;
@@ -32,6 +33,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidReport
 public class Report extends AbstractEntity {
 	// Serialisation version --------------------------------------------------
 

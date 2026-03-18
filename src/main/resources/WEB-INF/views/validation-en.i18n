@@ -23,3 +23,4 @@ acme.validation.invention.published-without-parts.message = Inventions cannot be
 acme.validation.sponsorship.published-without-donations.message = Sponsorships cannot be published unless they have at least one donation
 acme.validation.strategy.published-without-tactics.message = A strategy cannot be published unless it has at least one tactic 
 acme.validation.campaign.published-without-milestone.message = A campaign cannot be published unless it has at least one milestone 
+acme.validation.report.published-without-section.message = A report cannot be published unless it has at least one section
