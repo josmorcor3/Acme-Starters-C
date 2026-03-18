@@ -8,9 +8,15 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+# master.menu.spokesperson ####################################################
+
+master.menu.spokesperson = Portavoz
+master.menu.spokesperson.my-campaigns = Mis campañas
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
+master.menu.anonymous.list-campaigns = Ver campañas
 master.menu.anonymous.list-inventions = Ver invenciones
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.list-strategies = Ver estrategias
@@ -42,10 +48,16 @@ master.menu.user-account.become-provider = Hacerse proveedor
 master.menu.user-account.provider-profile = Perfil de proveedor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.consumer-profile = Perfil de consumidor
+# inventor
+master.menu.user-account.become-inventor = Hazte inventor
+master.menu.user-account.inventor-profile = Perfil de inventor
 # fundraiser
 master.menu.user-account.become-fundraiser = Hazte recaudador de fondos
 master.menu.user-account.fundraiser-profile = Perfil de recaudador de fondos
 # sponsor
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
+# spokesperson
+master.menu.user-account.become-spokesperson = Hazte portavoz
+master.menu.user-account.spokesperson-profile = Perfil de portavoz
 
