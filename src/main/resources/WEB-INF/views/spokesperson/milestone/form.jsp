@@ -22,14 +22,16 @@
 	<acme:form-select code="spokesperson.milestone.form.label.kind" path="kind" choices="${kinds}"/>
 
 	<jstl:choose>	 
-		<jstl:when test="${draftMode}">
+		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && draftMode == true}">
 			<acme:submit code="spokesperson.milestone.form.button.update" action="/spokesperson/milestone/update"/>
 			<acme:submit code="spokesperson.milestone.form.button.delete" action="/spokesperson/milestone/delete"/>
 		</jstl:when>
 		
 		<jstl:when test="${_command == 'create'}">
-			<acme:submit code="spokesperson.milestone.form.button.create" action="/spokesperson/milestone/create"/>
-		</jstl:when>		
+			<acme:submit code="spokesperson.milestone.form.button.create" action="/spokesperson/milestone/create?campaignId=${campaignId}"/>
+			
+		</jstl:when>
+				
 	</jstl:choose>
 	
 

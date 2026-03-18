@@ -36,7 +36,13 @@ public class SpokespersonMilestoneListService extends AbstractService<Spokespers
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.campaign != null && // 
+			(this.campaign.getSpokesperson().isPrincipal() || //
+				!this.campaign.getDraftMode());
+
+		super.setAuthorised(status);
 	}
 
 	@Override

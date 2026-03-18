@@ -14,7 +14,7 @@ import acme.entities.campaigns.Milestone;
 public interface SpokespersonMilestoneRepository extends AbstractRepository {
 
 	@Query("select m from Milestone m where m.id = :id")
-	Milestone getMilestoneById(int id);
+	Milestone findMilestoneById(int id);
 
 	@Query("select m from Milestone m where m.campaign.id = :id ")
 	Collection<Milestone> findMilestonesByCampaignId(int id);

@@ -13,6 +13,11 @@
 master.menu.spokesperson = Portavoz
 master.menu.spokesperson.my-campaigns = Mis campañas
 
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Autenticado
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
