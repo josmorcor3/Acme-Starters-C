@@ -28,12 +28,12 @@
 			<acme:form-double code="spokesperson.campaign.form.label.monthsActive" path="monthsActive"/>
 			<acme:form-textbox code="spokesperson.campaign.form.label.effort" path="effort"/>
 			
-			<acme:button code="spokesperson.campaign.form.button.milestone" action="/campaign/milestone/list?campaignId=${id}"/>
+			<acme:button code="spokesperson.campaign.form.button.milestone" action="/spokesperson/milestone/list?campaignId=${id}"/>
 		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
 			<acme:form-double code="spokesperson.campaign.form.label.monthsActive" path="monthsActive"/>
 			<acme:form-textbox code="spokesperson.campaign.form.label.effort" path="effort"/>
-			<acme:button code="spokesperson.campaign.form.button.milestone" action="/campaign/milestone/list?campaignId=${id}"/>
+			<acme:button code="spokesperson.campaign.form.button.milestone" action="/spokesperson/milestone/list?campaignId=${id}"/>
 			<acme:submit code="spokesperson.campaign.form.button.update" action="/spokesperson/campaign/update"/>
 			<acme:submit code="spokesperson.campaign.form.button.delete" action="/spokesperson/campaign/delete"/>
 			<acme:submit code="spokesperson.campaign.form.button.publish" action="/spokesperson/campaign/publish"/>
