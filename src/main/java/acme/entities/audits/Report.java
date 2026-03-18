@@ -19,6 +19,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -91,7 +92,7 @@ public class Report extends AbstractEntity {
 	}
 
 	@Mandatory
-	@Valid
+	@ValidNumber(min = 0)
 	@Transient
 	public Integer getHours() {
 		Integer result = this.repository.computeHours(this.getId());
