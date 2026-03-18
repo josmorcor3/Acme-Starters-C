@@ -31,7 +31,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class AuditReport extends AbstractEntity {
+public class Report extends AbstractEntity {
 	// Serialisation version --------------------------------------------------
 
 	private static final long		serialVersionUID	= 1L;
@@ -77,7 +77,7 @@ public class AuditReport extends AbstractEntity {
 
 	@Transient
 	@Autowired
-	private AuditReportRepository	repository;
+	private ReportRepository	repository;
 
 
 	@Transient
