@@ -67,7 +67,7 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 		Long milestones = count == null ? 0 : count;
 		hasMilestones = Boolean.TRUE.equals(this.campaign.getDraftMode()) && milestones > 0;
 
-		super.state(hasMilestones, "*", "acme.validation.campaign.published-without-milestones.message");
+		super.state(hasMilestones, "*", "acme.validation.campaign.published-without-milestone.message");
 	}
 
 	@Override
