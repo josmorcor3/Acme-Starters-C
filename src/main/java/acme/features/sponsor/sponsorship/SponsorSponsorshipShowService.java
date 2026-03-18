@@ -35,7 +35,8 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 		boolean status;
 
 		status = this.sponsorship != null && //
-			this.sponsorship.getSponsor().isPrincipal();
+			(this.sponsorship.getSponsor().isPrincipal() || //
+				!this.sponsorship.getDraftMode());
 
 		super.setAuthorised(status);
 	}

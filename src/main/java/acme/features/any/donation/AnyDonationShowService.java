@@ -36,8 +36,7 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 	public void authorise() {
 		boolean status;
 
-		status = this.donation != null && !this.donation.getSponsorship().getDraftMode();
-		;
+		status = this.donation != null && this.donation.getSponsorship().getDraftMode() == false;
 
 		super.setAuthorised(status);
 	}
