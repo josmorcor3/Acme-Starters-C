@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 import acme.client.repositories.AbstractRepository;
 
 @Repository
-public interface AuditReportRepository extends AbstractRepository {
+public interface ReportRepository extends AbstractRepository {
 
-	@Query("select sum(s.hours) from AuditSection s where s.report.id = :id")
+	@Query("select sum(s.hours) from Section s where s.report.id = :id")
 	Integer computeHours(int id);
 
 }

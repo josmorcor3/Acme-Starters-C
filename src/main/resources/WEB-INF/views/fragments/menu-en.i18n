@@ -26,6 +26,7 @@ master.menu.anonymous.list-inventions = List inventions
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.list-strategies = List strategies
 master.menu.anonymous.list-sponsorships = List sponsorship
+master.menu.anonymous.list-reports = List reports
 
 # master.menu.administrator ###################################################
 
@@ -65,3 +66,6 @@ master.menu.user-account.sponsor-profile = Sponsor profile
 # spokesperson
 master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
+# auditor
+master.menu.user-account.become-auditor= Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile

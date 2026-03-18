@@ -17,7 +17,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class AuditSection extends AbstractEntity {
+public class Section extends AbstractEntity {
 	// Serialisation version --------------------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
@@ -51,5 +51,5 @@ public class AuditSection extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne
-	private AuditReport			report;
+	private Report			report;
 }
