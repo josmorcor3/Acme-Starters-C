@@ -46,27 +46,12 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 				super.state(context, uniqueInvention, "ticker", "acme.validation.duplicated-ticker.message");
 			}
 			{
-				boolean publishedInventionHasAtLeastOnePart;
-				Long numberOfParts = this.repository.computeInventionParts(invention.getId());
-
-				publishedInventionHasAtLeastOnePart = invention.getDraftMode() || numberOfParts > 0;
-
-				super.state(context, publishedInventionHasAtLeastOnePart, "*", "acme.validation.invention.published-without-parts.message");
-			}
-			{
 				boolean startMomentIsBeforeEndMoment;
 
-				if(invention.getStartMoment() != null && invention.getEndMoment() != null) {
-					startMomentIsBeforeEndMoment =  MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
+				if (invention.getStartMoment() != null && invention.getEndMoment() != null) {
+					startMomentIsBeforeEndMoment = MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
 					super.state(context, startMomentIsBeforeEndMoment, "startMoment", "acme.validation.invalid-time-interval.message");
 				}
-			}
-			{
-				boolean correctCurrency;
-
-				correctCurrency = this.repository.computeInventionCurrencies(invention.getId()).stream().allMatch(c -> c.equals("EUR"));
-
-				super.state(context, correctCurrency, "cost", "acme.validation.invalid-currency.message");
 			}
 			result = !super.hasErrors(context);
 		}

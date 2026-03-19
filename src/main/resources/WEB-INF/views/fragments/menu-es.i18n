@@ -18,6 +18,11 @@ master.menu.anonymous.list-strategies = Ver estrategias
 master.menu.anonymous.list-sponsorships = Ver patrocinios
 master.menu.anonymous.list-reports = Ver reportes
 
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.list-inventions = Ver invenciones
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -35,6 +40,11 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.inventor ##########################################################
+
+master.menu.inventor = Inventor
+master.menu.inventor.list-my-inventions = Ver mis invenciones
 
 # master.menu.user-account ####################################################
 
