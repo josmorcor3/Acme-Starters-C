@@ -16,15 +16,15 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:form>
-	<acme:form-textbox code="any.reports.form.label.ticker" path="ticker"/>
-	<acme:form-textbox code="any.reports.form.label.name" path="name"/>
-	<acme:form-textarea code="any.reports.form.label.description" path="description"/>
-	<acme:form-moment code="any.reports.form.label.startMoment" path="startMoment"/>
-	<acme:form-moment code="any.reports.form.label.endMoment" path="endMoment"/>
-	<acme:form-url code="any.reports.form.label.moreInfo" path="moreInfo"/>
-	<acme:form-double code="any.reports.form.label.monthsActive" path="monthsActive"/>
-	<acme:form-money code="any.reports.form.label.hours" path="hours"/>
+	<acme:form-textbox code="any.report.form.label.ticker" path="ticker"/>
+	<acme:form-textbox code="any.report.form.label.name" path="name"/>
+	<acme:form-textarea code="any.report.form.label.description" path="description"/>
+	<acme:form-moment code="any.report.form.label.startMoment" path="startMoment"/>
+	<acme:form-moment code="any.report.form.label.endMoment" path="endMoment"/>
+	<acme:form-url code="any.report.form.label.moreInfo" path="moreInfo"/>
+	<acme:form-double code="any.report.form.label.monthsActive" path="monthsActive"/>
+	<acme:form-money code="any.report.form.label.hours" path="hours"/>
 	
-	<acme:button code="any.reports.form.button.sections" action="/any/section/list?reportId=${id}"/>
-	<acme:button code="any.reports.form.button.auditor" action="/any/auditor/show?id=${auditorId}"/>
+	<acme:button code="any.report.form.button.sections" action="/any/section/list?reportId=${id}"/>
+	<acme:button code="any.report.form.button.auditor" action="/any/auditor/show?id=${auditorId}"/>
 </acme:form>

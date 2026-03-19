@@ -9,22 +9,22 @@
 # they accept any liabilities with respect to them.
 
 
-any.reports.list.title = Lista de reportes
+any.report.list.title = Lista de reportes
 any.report.form.title = Detalles de reporte
 
-any.reports.form.label.ticker = Referencia:
-any.reports.form.label.name = Nombre:
-any.reports.form.label.description = Descripción:
-any.reports.form.label.startMoment = Instante de inicio:
-any.reports.form.label.endMoment = Instante de fin:
-any.reports.form.label.moreInfo = Más información: (Opcional)
-any.reports.form.label.monthsActive = Meses en activo:
-any.reports.form.label.hours = Horas:
+any.report.form.label.ticker = Referencia:
+any.report.form.label.name = Nombre:
+any.report.form.label.description = Descripción:
+any.report.form.label.startMoment = Instante de inicio:
+any.report.form.label.endMoment = Instante de fin:
+any.report.form.label.moreInfo = Más información: (Opcional)
+any.report.form.label.monthsActive = Meses en activo:
+any.report.form.label.hours = Horas:
 
-any.reports.form.button.sections = Secciones
-any.reports.form.button.auditor = Auditor
+any.report.form.button.sections = Secciones
+any.report.form.button.auditor = Auditor
 
-any.reports.list.label.ticker = Referencia
-any.reports.list.label.name = Nombre
-any.reports.list.label.monthsActive = Meses en activo
-any.reports.list.label.hours = Horas
+any.report.list.label.ticker = Referencia
+any.report.list.label.name = Nombre
+any.report.list.label.monthsActive = Meses en activo
+any.report.list.label.hours = Horas
