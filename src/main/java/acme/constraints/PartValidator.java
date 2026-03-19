@@ -31,7 +31,7 @@ public class PartValidator extends AbstractValidator<ValidPart, Part> {
 			{
 				boolean correctCurrency;
 
-				if (part.getCost().getCurrency() != null) {
+				if (part.getCost() != null && part.getCost().getCurrency() != null) {
 					correctCurrency = part.getCost().getCurrency().equals("EUR");
 					super.state(context, correctCurrency, "cost", "acme.validation.invalid-currency.message");
 				}
