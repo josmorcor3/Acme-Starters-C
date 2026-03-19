@@ -75,13 +75,11 @@
 		
 		</acme:menu-option>
   
-  <%-- SPOKESPERSON --%>
+  		<%-- SPOKESPERSON --%>
 		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
 			<acme:menu-suboption code="master.menu.spokesperson.my-campaigns" action="/spokesperson/campaign/list"/>
 		
 		</acme:menu-option>
-	
-	</acme:menu-left>
 	
 	<acme:menu-right>		
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
