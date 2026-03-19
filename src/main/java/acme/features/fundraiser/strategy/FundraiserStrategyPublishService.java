@@ -48,17 +48,19 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 		super.validateObject(this.strategy);
 
 		// validamos que START MOMENT esté en el futuro en el momento de creación
-		boolean startMomentIsInFuture;
-		startMomentIsInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
+		if (this.strategy.getStartMoment() != null) {
+			boolean startMomentIsInFuture;
+			startMomentIsInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
 
-		super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
-
+			super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
+		}
 		// validamos que END MOMENT esté en el futuro en el momento de creación
-		boolean endMomentIsInFuture;
-		endMomentIsInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
+		if (this.strategy.getEndMoment() != null) {
+			boolean endMomentIsInFuture;
+			endMomentIsInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
 
-		super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
-
+			super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
+		}
 		boolean hasTactics;
 
 		Long count = this.repository.computeTacticsByStrategy(this.strategy.getId());

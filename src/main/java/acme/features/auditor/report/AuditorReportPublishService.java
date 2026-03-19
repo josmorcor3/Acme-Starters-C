@@ -56,16 +56,20 @@ public class AuditorReportPublishService extends AbstractService<Auditor, Report
 			super.state(isNotPublished, "*", "acme.validation.already-published.message");
 		}
 		{
-			boolean startMomentIsFuture;
+			if (this.report.getStartMoment() != null) {
+				boolean startMomentIsFuture;
 
-			startMomentIsFuture = MomentHelper.isFuture(this.report.getStartMoment());
-			super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+				startMomentIsFuture = MomentHelper.isFuture(this.report.getStartMoment());
+				super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+			}
 		}
 		{
-			boolean endMomentIsFuture;
+			if (this.report.getEndMoment() != null) {
+				boolean endMomentIsFuture;
 
-			endMomentIsFuture = MomentHelper.isFuture(this.report.getEndMoment());
-			super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+				endMomentIsFuture = MomentHelper.isFuture(this.report.getEndMoment());
+				super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+			}
 		}
 		{
 			boolean hasAtLeastOneSection;

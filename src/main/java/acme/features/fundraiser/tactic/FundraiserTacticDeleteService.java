@@ -40,7 +40,7 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void bind() {
-		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
+		;
 	}
 
 	@Override
