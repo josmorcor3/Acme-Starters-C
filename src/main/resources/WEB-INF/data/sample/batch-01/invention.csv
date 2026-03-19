@@ -4,7 +4,7 @@ invention-01,TK00-abc00,"Invention","Description of invention",2025/01/01 00:01,
 # ticker standard variations
 invention-02,TK00-abc001,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
 invention-03,TK00-abc001abc,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-04,TK00-abc001abcd,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
+invention-04,TK00-abc001abcd,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
 # ticker - no singular values
 # name - standard variations
 invention-05,TK00-abc01,"I","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
