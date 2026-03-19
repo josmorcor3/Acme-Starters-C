@@ -29,6 +29,10 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-reports" action="/any/report/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
@@ -45,6 +49,9 @@
 
 		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
+			<acme:menu-suboption code="master.menu.auditor.list-my-reports" action="/auditor/report/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

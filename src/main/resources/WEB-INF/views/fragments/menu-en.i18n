@@ -59,3 +59,13 @@ master.menu.user-account.spokesperson-profile = Spokesperson profile
 # auditor
 master.menu.user-account.become-auditor= Become an auditor
 master.menu.user-account.auditor-profile = Auditor profile
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.list-reports = List reports
+
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-my-reports = List my reports
