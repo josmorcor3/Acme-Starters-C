@@ -75,7 +75,7 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 
 			hasAtLeastOnePart = numberOfParts > 0;
 
-			super.state(hasAtLeastOnePart, "*", "acme.validation.sponsorship.published-without-parts.message");
+			super.state(hasAtLeastOnePart, "*", "acme.validation.sponsorship.published-without-donations.message");
 		}
 	}
 
