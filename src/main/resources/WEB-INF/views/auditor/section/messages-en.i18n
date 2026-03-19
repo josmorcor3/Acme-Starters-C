@@ -12,7 +12,7 @@ auditor.section.form.title = Section form
 auditor.section.list.title = Listing of sections
 
 auditor.section.form.label.name = Name:
-auditor.section.form.label.description = Description:
+auditor.section.form.label.notes = Notes:
 auditor.section.form.label.hours = Hours:
 auditor.section.form.label.kind = Kind:
 

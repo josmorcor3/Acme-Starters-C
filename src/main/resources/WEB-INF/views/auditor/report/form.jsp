@@ -32,7 +32,7 @@
 		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
 			<acme:form-double code="auditor.report.form.label.monthsActive" path="monthsActive" readonly="true"/>
-			<acme:form-money code="auditor.report.form.label.cost" path="cost" readonly="true"/>
+			<acme:form-integer code="auditor.report.form.label.hours" path="hours" readonly="true"/>
 
 			<acme:button code="auditor.report.form.button.sections" action="/auditor/section/list?reportId=${id}"/>
 			<acme:submit code="auditor.report.form.button.update" action="/auditor/report/update"/>

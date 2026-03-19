@@ -23,4 +23,4 @@ acme.validation.invention.published-without-parts.message = Una invención no pu
 acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
 acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
 acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a menos que tenga un hito
-acme.validation.report.published-without-section.message = Un informe no puede ser publicado a menos que tenga una sección
+acme.validation.report.published-without-sections.message = Un informe no puede ser publicado a menos que tenga una sección
