@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:form>
-	<acme:form-textbox code="any.campaign.form.label.fullName" path="userAccount.identity.fullName"/>
-	<acme:form-textbox code="any.campaign.form.label.email" path="userAccount.identity.email"/>
+	<acme:form-textbox code="any.spokesperson.form.label.fullName" path="userAccount.identity.fullName"/>
+	<acme:form-textbox code="any.spokesperson.form.label.email" path="userAccount.identity.email"/>
 	<acme:form-textarea code="any.spokesperson.form.label.cv" path="cv"/>
 	<acme:form-textarea code="any.spokesperson.form.label.achievements" path="achievements"/>
 	<acme:form-checkbox code="any.spokesperson.form.label.licensed" path="licensed"/>

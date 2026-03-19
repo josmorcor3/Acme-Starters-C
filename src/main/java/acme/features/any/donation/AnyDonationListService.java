@@ -30,15 +30,15 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 		int sponsorshipId;
 
 		sponsorshipId = super.getRequest().getData("sponsorshipId", int.class);
-		this.sponsorship = this.repository.findSponsorshipById(sponsorshipId);
 		this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
+		this.sponsorship = this.repository.findSponsorshipById(sponsorshipId);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && !this.sponsorship.getDraftMode();
+		status = this.donations != null && this.sponsorship.getDraftMode() == false;
 
 		super.setAuthorised(status);
 	}

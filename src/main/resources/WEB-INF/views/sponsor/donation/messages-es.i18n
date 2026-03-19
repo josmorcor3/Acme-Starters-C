@@ -1,0 +1,27 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for sponsor particular
+# purposes.  The copyright owner does not offer sponsor warranties or representations, nor do
+# they accept sponsor liabilities with respect to them.
+
+sponsor.donation.form.title = Detalles de la donación
+sponsor.donation.list.title = Lista de donaciones
+
+sponsor.donation.form.label.name = Nombre:
+sponsor.donation.form.label.notes = Notas:
+sponsor.donation.form.label.kind = Tipo:
+sponsor.donation.form.label.money = Dinero:
+
+sponsor.donation.form.button.update = Actualizar
+sponsor.donation.form.button.delete = Eliminar
+sponsor.donation.form.button.create = Crear
+
+sponsor.donation.list.label.name = Nombre:
+sponsor.donation.list.label.kind = Tipo:
+sponsor.donation.list.label.money = Dinero:
+
+sponsor.donation.list.button.create = Crear

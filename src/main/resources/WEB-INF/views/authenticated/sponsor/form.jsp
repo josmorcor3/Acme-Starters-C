@@ -16,7 +16,7 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.sponsor.form.label.address" path="address"/>
+	<acme:form-textarea code="authenticated.sponsor.form.label.address" path="address"/>
 	<acme:form-textbox code="authenticated.sponsor.form.label.im" path="im"/>
 	<acme:form-checkbox code="authenticated.sponsor.form.label.gold" path="gold"/>
 	

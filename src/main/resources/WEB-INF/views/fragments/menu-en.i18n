@@ -42,11 +42,6 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
-# master.menu.inventor ##########################################################
-
-master.menu.inventor = Inventor
-master.menu.inventor.list-my-inventions = List my inventions
-
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -55,33 +50,49 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.provider-profile = Provider profile
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.consumer-profile = Consumer profile
+
 # inventor
-master.menu.user-account.become-inventor = Become a inventor
+master.menu.user-account.become-inventor = Become an inventor
 master.menu.user-account.inventor-profile = Inventor profile
+
 # fundraiser
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
 
+# sponsor
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
+
+# spokesperson
+master.menu.user-account.become-spokesperson = Become a spokesperson
+master.menu.user-account.spokesperson-profile = Spokesperson profile
+
+# auditor
+master.menu.user-account.become-auditor= Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile
+
+# master.menu.inventor ##########################################################
+
+master.menu.inventor = Inventor
+master.menu.inventor.list-my-inventions = List my inventions
 
 # master.menu.fundraiser ####################################################
 
 master.menu.fundraiser = Fundraiser
 master.menu.fundraiser.my-strategies = My strategies
 
-# master.menu.authenticated ####################################################
+# master.menu.sponsor ####################################################
 
-master.menu.authenticated = Authenticated
-# sponsor
-master.menu.user-account.become-sponsor = Become a sponsor
-master.menu.user-account.sponsor-profile = Sponsor profile
-# spokesperson
-master.menu.user-account.become-spokesperson = Become a spokesperson
-master.menu.user-account.spokesperson-profile = Spokesperson profile
-# auditor
-master.menu.user-account.become-auditor= Become an auditor
-master.menu.user-account.auditor-profile = Auditor profile
+master.menu.sponsor = Sponsor
+master.menu.sponsor.my-sponsorships = My sponsorships
+
+# master.menu.spokesperson ####################################################
+
+master.menu.spokesperson = Spokesperson
+master.menu.spokesperson.my-campaigns = My campaigns
 
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
 master.menu.auditor.list-my-reports = List my reports
+
