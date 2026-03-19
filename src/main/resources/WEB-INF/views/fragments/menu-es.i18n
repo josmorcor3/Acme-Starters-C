@@ -16,12 +16,13 @@ master.menu.anonymous.list-inventions = Ver invenciones
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.list-strategies = Ver estrategias
 master.menu.anonymous.list-sponsorships = Ver patrocinios
-master.menu.anonymous.list-reports = Ver reportes
+master.menu.anonymous.list-reports = Ver informes
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.list-inventions = Ver invenciones
+master.menu.authenticated.list-reports = Ver informes
 
 # master.menu.administrator ###################################################
 
@@ -79,11 +80,6 @@ master.menu.user-account.spokesperson-profile = Perfil de portavoz
 # auditor
 master.menu.user-account.become-auditor = Hazte auditor
 master.menu.user-account.auditor-profile = Perfil de auditor
-
-# master.menu.authenticated #######################################################
-
-master.menu.authenticated = Autenticado
-master.menu.authenticated.list-reports = Ver informes
 
 # master.menu.auditor ##########################################################
 
