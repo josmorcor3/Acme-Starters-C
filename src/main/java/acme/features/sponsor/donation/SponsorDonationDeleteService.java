@@ -42,7 +42,7 @@ public class SponsorDonationDeleteService extends AbstractService<Sponsor, Donat
 
 	@Override
 	public void bind() {
-		super.bindObject(this.donation, "name", "notes", "money", "kind");
+		;
 	}
 
 	@Override

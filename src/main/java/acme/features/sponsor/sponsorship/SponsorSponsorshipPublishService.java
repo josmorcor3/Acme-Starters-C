@@ -49,34 +49,24 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 	public void validate() {
 		super.validateObject(this.sponsorship);
 
-		{
-			boolean isNotPublished;
+		if (this.sponsorship.getStartMoment() != null) {
+			boolean startMomentIsInFuture;
+			startMomentIsInFuture = MomentHelper.isFuture(this.sponsorship.getStartMoment());
 
-			isNotPublished = this.sponsorship.getDraftMode();
-
-			super.state(isNotPublished, "*", "acme.validation.already-published.message");
+			super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
 		}
-		{
-			boolean startMomentIsFuture;
 
-			startMomentIsFuture = MomentHelper.isFuture(this.sponsorship.getStartMoment());
-			super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+		if (this.sponsorship.getEndMoment() != null) {
+			boolean endMomentIsInFuture;
+			endMomentIsInFuture = MomentHelper.isFuture(this.sponsorship.getEndMoment());
+
+			super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
 		}
-		{
-			boolean endMomentIsFuture;
+		boolean hasDonation;
 
-			endMomentIsFuture = MomentHelper.isFuture(this.sponsorship.getEndMoment());
-			super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
-		}
-		{
-			boolean hasAtLeastOnePart;
-
-			Long numberOfParts = this.repository.computeDonationsBySponsorship(this.sponsorship.getId());
-
-			hasAtLeastOnePart = numberOfParts > 0;
-
-			super.state(hasAtLeastOnePart, "*", "acme.validation.sponsorship.published-without-donations.message");
-		}
+		Long count = this.repository.computeDonationsBySponsorship(this.sponsorship.getId());
+		Long donation = count == null ? 0 : count;
+		hasDonation = Boolean.TRUE.equals(this.sponsorship.getDraftMode()) && donation > 0;
 	}
 
 	@Override

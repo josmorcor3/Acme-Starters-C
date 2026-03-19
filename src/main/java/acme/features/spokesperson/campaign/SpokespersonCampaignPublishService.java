@@ -47,16 +47,19 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 	public void validate() {
 		super.validateObject(this.campaign);
 
-		boolean startMomentIsInFuture;
-		startMomentIsInFuture = MomentHelper.isFuture(this.campaign.getStartMoment());
+		if (this.campaign.getStartMoment() != null) {
+			boolean startMomentIsInFuture;
+			startMomentIsInFuture = MomentHelper.isFuture(this.campaign.getStartMoment());
 
-		super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
+			super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
+		}
 
-		boolean endMomentIsInFuture;
-		endMomentIsInFuture = MomentHelper.isFuture(this.campaign.getEndMoment());
+		if (this.campaign.getEndMoment() != null) {
+			boolean endMomentIsInFuture;
+			endMomentIsInFuture = MomentHelper.isFuture(this.campaign.getEndMoment());
 
-		super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
-
+			super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
+		}
 		boolean hasMilestones;
 
 		Long count = this.repository.computeMilestonesByCampaign(this.campaign.getId());

@@ -56,16 +56,20 @@ public class InventorInventionPublishService extends AbstractService<Inventor, I
 			super.state(isNotPublished, "*", "acme.validation.already-published.message");
 		}
 		{
-			boolean startMomentIsFuture;
+			if (this.invention.getStartMoment() != null) {
+				boolean startMomentIsFuture;
 
-			startMomentIsFuture = MomentHelper.isFuture(this.invention.getStartMoment());
-			super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+				startMomentIsFuture = MomentHelper.isFuture(this.invention.getStartMoment());
+				super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+			}
 		}
 		{
-			boolean endMomentIsFuture;
+			if (this.invention.getEndMoment() != null) {
+				boolean endMomentIsFuture;
 
-			endMomentIsFuture = MomentHelper.isFuture(this.invention.getEndMoment());
-			super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+				endMomentIsFuture = MomentHelper.isFuture(this.invention.getEndMoment());
+				super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+			}
 		}
 		{
 			boolean hasAtLeastOnePart;
