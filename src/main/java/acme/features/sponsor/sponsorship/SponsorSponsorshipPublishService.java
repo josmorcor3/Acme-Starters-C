@@ -67,8 +67,6 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 		Long count = this.repository.computeDonationsBySponsorship(this.sponsorship.getId());
 		Long donation = count == null ? 0 : count;
 		hasDonation = Boolean.TRUE.equals(this.sponsorship.getDraftMode()) && donation > 0;
-
-		super.state(hasDonation, "*", "acme.validation.sponsorship.published-without-donations.message");
 	}
 
 	@Override

@@ -43,7 +43,7 @@ public class InventorInventionDeleteService extends AbstractService<Inventor, In
 
 	@Override
 	public void bind() {
-		;
+		super.bindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
