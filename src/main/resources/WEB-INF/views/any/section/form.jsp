@@ -16,14 +16,8 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.fundraiser.form.label.bank" path="bank"/>
-	<acme:form-textarea code="authenticated.fundraiser.form.label.statement" path="statement"/>
-	<acme:form-checkbox code="authenticated.fundraiser.form.label.agent" path="agent"/>
-	
-	<jstl:if test="${_command == 'create'}">
-		<acme:submit code="authenticated.fundraiser.form.button.create" action="/authenticated/fundraiser/create"/>
-	</jstl:if>
-	<jstl:if test="${_command == 'update'}">
-		<acme:submit code="authenticated.fundraiser.form.button.update" action="/authenticated/fundraiser/update"/>
-	</jstl:if>
+	<acme:form-textbox code="any.section.form.label.name" path="name"/>
+	<acme:form-textarea code="any.section.form.label.notes" path="notes"/>
+	<acme:form-integer code="any.section.form.label.hours" path="hours"/>
+	<acme:form-select code="any.section.form.label.kind" path="kind" choices="${kinds}"/>
 </acme:form>

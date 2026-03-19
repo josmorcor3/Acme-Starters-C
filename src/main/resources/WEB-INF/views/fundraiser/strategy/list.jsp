@@ -16,10 +16,10 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.strategy.list.label.ticker" path="ticker" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.name" path="name" width="30%"/>
-	<acme:list-column code="any.strategy.list.label.fundraiser" path="fundraiser.userAccount.identity.name" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.expectedPercentage" path="expectedPercentage" width="20%"/>
+	<acme:list-column code="fundraiser.strategy.list.label.ticker" path="ticker" width="15%"/>
+	<acme:list-column code="fundraiser.strategy.list.label.name" path="name" width="40%"/>	
+	<acme:list-column code="fundraiser.strategy.list.label.expectedPercentage" path="expectedPercentage" width="20%"/>
+	<acme:list-column code="fundraiser.strategy.list.label.draftMode" path="draftMode" width="25%"/>
 	<acme:list-hidden path="description"/>
 	<acme:list-hidden path="startMoment"/>
 	<acme:list-hidden path="endMoment"/>
@@ -27,3 +27,5 @@
 	<acme:list-hidden path="monthsActive"/>
 
 </acme:list>
+
+<acme:button code="fundraiser.strategy.list.button.create" action="/fundraiser/strategy/create"/>

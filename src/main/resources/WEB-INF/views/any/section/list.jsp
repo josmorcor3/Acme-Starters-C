@@ -16,14 +16,7 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.strategy.list.label.ticker" path="ticker" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.name" path="name" width="30%"/>
-	<acme:list-column code="any.strategy.list.label.fundraiser" path="fundraiser.userAccount.identity.name" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.expectedPercentage" path="expectedPercentage" width="20%"/>
-	<acme:list-hidden path="description"/>
-	<acme:list-hidden path="startMoment"/>
-	<acme:list-hidden path="endMoment"/>
-	<acme:list-hidden path="moreInfo"/>
-	<acme:list-hidden path="monthsActive"/>
-
+	<acme:list-column code="any.section.list.label.name" path="name" width="40%"/>
+	<acme:list-column code="any.section.list.label.hours" path="hours" width="30%"/>
+	<acme:list-column code="any.section.list.label.kind" path="kind" width="30%"/>
 </acme:list>

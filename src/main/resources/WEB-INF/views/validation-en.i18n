@@ -13,6 +13,12 @@ acme.validation.text.message   		= Must have from 1 to 255 characters
 
 acme.validation.duplicated-ticker.message	= The ticker is duplicated
 acme.validation.ticker.message				= The ticker must start with two uppercase letters and two digits, followed by a hyphen and 5 to 10 letters, digits, or underscores
+acme.validation.strategy.published-without-tactics.message = A strategy cannot be published unless it has at least one tactic 
+
+acme.validation.invalid-time-interval.message = Start moment must be before end moment
+
+acme.validation.startMoment-is-not-in-the-future.message = Start moment must be in the future 
+acme.validation.endMoment-is-not-in-the-future.message = End moment must be in the future
 
 acme.validation.already-published.message = It is already published
 acme.validation.invalid-time-interval.message = Start moment must be before end moment

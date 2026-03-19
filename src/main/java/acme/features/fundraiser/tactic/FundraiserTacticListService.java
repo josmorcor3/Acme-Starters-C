@@ -1,26 +1,26 @@
 
-package acme.features.any.tactic;
+package acme.features.fundraiser.tactic;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
 import acme.entities.strategies.Tactic;
+import acme.realms.Fundraiser;
 
 @Service
-public class AnyTacticListService extends AbstractService<Any, Tactic> {
+public class FundraiserTacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyTacticRepository	repository;
+	private FundraiserTacticRepository	repository;
 
-	private Collection<Tactic>	tactics;
-	private Strategy			strategy;
+	private Collection<Tactic>			tactics;
+	private Strategy					strategy;
 
 	// AbstractService interface -------------------------------------------
 
@@ -38,15 +38,23 @@ public class AnyTacticListService extends AbstractService<Any, Tactic> {
 	public void authorise() {
 		boolean status;
 
-		status = this.tactics != null && this.strategy.getDraftMode() == false;
+		status = this.strategy != null && // 
+			(this.strategy.getFundraiser().isPrincipal() || //
+				!this.strategy.getDraftMode());
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
+		boolean showCreate;
+
 		super.unbindObjects(this.tactics, //
 			"name", "notes", "expectedPercentage", "kind");
+
+		showCreate = this.strategy.getDraftMode() && this.strategy.getFundraiser().isPrincipal();
+		super.unbindGlobal("showCreate", showCreate);
+		super.unbindGlobal("strategyId", this.strategy.getId());
 	}
 
 }
