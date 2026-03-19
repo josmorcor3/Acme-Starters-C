@@ -48,20 +48,11 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 			}
 
 			{
-				boolean hasTactics;
-
-				Long count = this.repository.findTacticsByStrategy(strategy.getId());
-				Long tactics = count == null ? 0 : count;
-				hasTactics = Boolean.TRUE.equals(strategy.getDraftMode()) || tactics > 0; // pongo el boolean true porque he puesto un dato en errata con el draftmode en null y salta
-
-				super.state(context, hasTactics, "*", "acme.validation.strategy.published-without-tactics.message");
-			}
-			{
 				boolean startMomentIsBeforeEndMoment;
 				if (strategy.getStartMoment() != null && strategy.getEndMoment() != null) {
 					startMomentIsBeforeEndMoment = MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment());
 
-					super.state(context, startMomentIsBeforeEndMoment, "endMoment", "acme.validation.invalid-time-interval.message");
+					super.state(context, startMomentIsBeforeEndMoment, "*", "acme.validation.invalid-time-interval.message");
 				}
 
 			}
