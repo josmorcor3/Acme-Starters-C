@@ -8,6 +8,16 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+# master.menu.spokesperson ####################################################
+
+master.menu.spokesperson = Spokesperson
+master.menu.spokesperson.my-campaigns = My campaigns
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Authenticated
+
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous

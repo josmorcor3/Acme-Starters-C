@@ -1,0 +1,35 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+spokesperson.campaign.form.title = Detalles de la campaña
+spokesperson.campaign.list.title = Listado de mis campañas
+
+spokesperson.campaign.form.label.name = Nombre:
+spokesperson.campaign.form.label.ticker = Referencia:
+spokesperson.campaign.form.label.monthsActive = Meses Activos:
+spokesperson.campaign.form.label.effort = Esfuerzo:
+spokesperson.campaign.form.label.description = Descripción:
+spokesperson.campaign.form.label.startMoment = Momento de inicio:
+spokesperson.campaign.form.label.endMoment = Momento de fin:
+spokesperson.campaign.form.label.moreInfo = Más información (opcional):
+
+spokesperson.campaign.form.button.milestone = Hitos
+
+spokesperson.campaign.form.button.update = Actualizar
+spokesperson.campaign.form.button.delete = Eliminar
+spokesperson.campaign.form.button.create = Crear
+spokesperson.campaign.form.button.publish = Publicar
+
+spokesperson.campaign.list.label.name = Nombre:
+spokesperson.campaign.list.label.ticker = Referencia:
+spokesperson.campaign.list.label.effort = Esfuerzo :
+spokesperson.campaign.list.label.draftMode = Está en modo borrador: 
+
+spokesperson.campaign.list.button.create = Crear
