@@ -32,9 +32,9 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-inventions" action="/any/invention/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-strategies" action="/any/strategy/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-sponsorships" action="/any/sponsorship/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-reports" action="/any/report/list"/>
 		</acme:menu-option>
 

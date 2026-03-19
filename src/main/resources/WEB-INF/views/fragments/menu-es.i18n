@@ -23,6 +23,9 @@ master.menu.anonymous.list-reports = Ver informes
 master.menu.authenticated = Autenticado
 master.menu.authenticated.list-inventions = Ver invenciones
 master.menu.authenticated.list-reports = Ver informes
+master.menu.authenticated.list-strategies = Ver estrategias
+master.menu.authenticated.list-sponsorships = Ver patrocinios
+master.menu.authenticated.list-campaigns = Ver campañas
 
 # master.menu.administrator ###################################################
 
