@@ -11,8 +11,9 @@ import javax.validation.Payload;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = SponsorshipValidator.class)
-public @interface ValidSponsorship {
+@Constraint(validatedBy = DonationValidator.class)
+
+public @interface ValidDonation {
 
 	// Standard validation properties -----------------------------------------
 

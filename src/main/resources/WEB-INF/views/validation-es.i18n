@@ -27,4 +27,9 @@ acme.validation.invalid-currency.message = La divisa de la moneda debe ser euros
 acme.validation.invention.published-without-parts.message = Una invención no puede ser publicada a no ser que tenga al menos una parte
 acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
 acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
+
+acme.validation.already-published.message = Ya está publicado
+acme.validation.invalid-time-interval.message = El instante de comienzo debe ser anterior al de fin
+
+acme.validation.invalid-currency.message = Moneda incorrecta
 acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a menos que tenga un hito

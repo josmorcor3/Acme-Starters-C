@@ -1,25 +1,25 @@
 
-package acme.features.any.donation;
+package acme.features.sponsor.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
-import acme.client.components.principals.Any;
 import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
 import acme.entities.sponsorships.DonationKind;
+import acme.realms.Sponsor;
 
 @Service
-public class AnyDonationShowService extends AbstractService<Any, Donation> {
+public class SponsorDonationShowService extends AbstractService<Sponsor, Donation> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyDonationRepository	repository;
+	private SponsorDonationRepository	repository;
 
-	private Donation				donation;
+	private Donation					donation;
 
 	// AbstractService interface -------------------------------------------
 
@@ -36,19 +36,26 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 	public void authorise() {
 		boolean status;
 
-		status = this.donation != null && this.donation.getSponsorship().getDraftMode() == false;
+		status = this.donation != null && // 
+			(this.donation.getSponsorship().getSponsor().isPrincipal() || //
+				!this.donation.getSponsorship().getDraftMode());
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
-		SelectChoices choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
+		SelectChoices choices;
+		Tuple tuple;
 
-		Tuple tuple = super.unbindObject(this.donation, "name", "notes", "money", "kind");
+		choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
 
+		tuple = super.unbindObject(this.donation, "name", "notes", "money");
 		tuple.put("kind", choices.getSelected().getKey());
 		tuple.put("kinds", choices);
+
+		tuple.put("sponsorshipId", this.donation.getSponsorship().getId());
+		tuple.put("draftMode", this.donation.getSponsorship().getDraftMode());
 	}
 
 }

@@ -1,23 +1,23 @@
 
-package acme.features.any.sponsorship;
+package acme.features.sponsor.sponsorship;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Sponsorship;
+import acme.realms.Sponsor;
 
 @Service
-public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship> {
+public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Sponsorship> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnySponsorshipRepository	repository;
+	private SponsorSponsorshipRepository	repository;
 
-	private Sponsorship					sponsorship;
+	private Sponsorship						sponsorship;
 
 	// AbstractService interface -------------------------------------------
 
@@ -34,14 +34,16 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && !this.sponsorship.getDraftMode();
+		status = this.sponsorship != null && //
+			(this.sponsorship.getSponsor().isPrincipal() || //
+				!this.sponsorship.getDraftMode());
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "totalMoney");
+		Tuple tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "totalMoney", "draftMode");
 		tuple.put("sponsorId", this.sponsorship.getSponsor().getId());
 		tuple.put("id", this.sponsorship.getId());
 	}

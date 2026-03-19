@@ -1,26 +1,26 @@
 
-package acme.features.any.donation;
+package acme.features.sponsor.donation;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
 import acme.entities.sponsorships.Sponsorship;
+import acme.realms.Sponsor;
 
 @Service
-public class AnyDonationListService extends AbstractService<Any, Donation> {
+public class SponsorDonationListService extends AbstractService<Sponsor, Donation> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyDonationRepository	repository;
+	private SponsorDonationRepository	repository;
 
-	private Sponsorship				sponsorship;
-	private Collection<Donation>	donations;
+	private Collection<Donation>		donations;
+	private Sponsorship					sponsorship;
 
 	// AbstractService interface -------------------------------------------
 
@@ -30,23 +30,29 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 		int sponsorshipId;
 
 		sponsorshipId = super.getRequest().getData("sponsorshipId", int.class);
-		this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
 		this.sponsorship = this.repository.findSponsorshipById(sponsorshipId);
+		this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
-
-		status = this.donations != null && this.sponsorship.getDraftMode() == false;
+		status = this.sponsorship != null && (this.sponsorship.getSponsor().isPrincipal() || //
+			!this.sponsorship.getDraftMode());
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
+		boolean showCreate;
+
 		super.unbindObjects(this.donations, //
 			"name", "notes", "money", "kind");
+
+		showCreate = this.sponsorship.getDraftMode() && this.sponsorship.getSponsor().isPrincipal();
+		super.unbindGlobal("showCreate", showCreate);
+		super.unbindGlobal("sponsorshipId", this.sponsorship.getId());
 	}
 
 }

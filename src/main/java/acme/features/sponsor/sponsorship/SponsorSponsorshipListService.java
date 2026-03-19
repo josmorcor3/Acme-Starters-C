@@ -1,31 +1,34 @@
 
-package acme.features.any.sponsorship;
+package acme.features.sponsor.sponsorship;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Sponsorship;
+import acme.realms.Sponsor;
 
 @Service
-public class AnySponsorshipListService extends AbstractService<Any, Sponsorship> {
+public class SponsorSponsorshipListService extends AbstractService<Sponsor, Sponsorship> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnySponsorshipRepository	repository;
+	private SponsorSponsorshipRepository	repository;
 
-	private Collection<Sponsorship>		sponsorships;
+	private Collection<Sponsorship>			sponsorships;
 
 	// AbstractService interface -------------------------------------------
 
 
 	@Override
 	public void load() {
-		this.sponsorships = this.repository.findPublishedSponsorships();
+		int sponsorId;
+
+		sponsorId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.sponsorships = this.repository.findSponsorshipsBySponsorId(sponsorId);
 	}
 
 	@Override
@@ -36,6 +39,7 @@ public class AnySponsorshipListService extends AbstractService<Any, Sponsorship>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.sponsorships, //
-			"ticker", "name", "sponsor.userAccount.identity.fullName", "totalMoney");
+			"ticker", "name", "draftMode", "totalMoney");
 	}
+
 }

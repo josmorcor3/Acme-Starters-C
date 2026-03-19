@@ -77,15 +77,18 @@ master.menu.user-account.fundraiser-profile = Fundraiser profile
 master.menu.fundraiser = Fundraiser
 master.menu.fundraiser.my-strategies = My strategies
 
-# master.menu.authenticated ####################################################
+# master.menu.sponsor ####################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.my-sponsorships = My sponsorships
 
 master.menu.authenticated = Authenticated
-# sponsor
-master.menu.user-account.become-sponsor = Become a sponsor
-master.menu.user-account.sponsor-profile = Sponsor profile
 # spokesperson
 master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
 # auditor
 master.menu.user-account.become-auditor= Become an auditor
 master.menu.user-account.auditor-profile = Auditor profile
+# sponsor
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
