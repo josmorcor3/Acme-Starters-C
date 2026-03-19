@@ -16,10 +16,10 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.reports.list.label.ticker" path="ticker" width="20%"/>
-	<acme:list-column code="any.reports.list.label.name" path="name" width="30%"/>
-	<acme:list-column code="any.reports.list.label.monthsActive" path="monthsActive" width="20%"/>
-	<acme:list-column code="any.reports.list.label.hours" path="hours" width="20%"/>
+	<acme:list-column code="any.report.list.label.ticker" path="ticker" width="20%"/>
+	<acme:list-column code="any.report.list.label.name" path="name" width="30%"/>
+	<acme:list-column code="any.report.list.label.monthsActive" path="monthsActive" width="20%"/>
+	<acme:list-column code="any.report.list.label.hours" path="hours" width="20%"/>
 	<acme:list-hidden path="description"/>
 	<acme:list-hidden path="startMoment"/>
 	<acme:list-hidden path="endMoment"/>

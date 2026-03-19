@@ -30,14 +30,9 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		
 		</acme:menu-option>
-		
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
-		</acme:menu-option>
-		
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-inventions" action="/any/invention/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-reports" action="/any/report/list"/>
 		</acme:menu-option>
