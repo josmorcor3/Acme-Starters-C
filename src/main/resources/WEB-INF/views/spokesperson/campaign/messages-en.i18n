@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer spokesperson warranties or representations, nor do
 # they accept spokesperson liabilities with respect to them.
 
-spokesperson.campaign.form.title = campaign form
+spokesperson.campaign.form.title = Campaign form
 spokesperson.campaign.list.title = Listing of my campaigns
 
 spokesperson.campaign.form.label.name = Name:

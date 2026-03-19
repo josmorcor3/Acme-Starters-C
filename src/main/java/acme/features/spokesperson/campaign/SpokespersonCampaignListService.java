@@ -25,10 +25,10 @@ public class SpokespersonCampaignListService extends AbstractService<Spokesperso
 
 	@Override
 	public void load() {
-		int campaignId;
+		int spokepersonId;
 
-		campaignId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.campaigns = this.repository.findCampaignsBySpokespersonId(campaignId);
+		spokepersonId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.campaigns = this.repository.findCampaignsBySpokespersonId(spokepersonId);
 	}
 
 	@Override

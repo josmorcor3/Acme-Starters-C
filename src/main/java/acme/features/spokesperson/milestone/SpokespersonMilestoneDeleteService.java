@@ -60,7 +60,7 @@ public class SpokespersonMilestoneDeleteService extends AbstractService<Spokespe
 		Tuple tuple;
 
 		tuple = super.unbindObject(this.milestone, "title", "achievements", "effort", "kind");
-		tuple.put("strategyId", this.milestone.getCampaign().getId());
+		tuple.put("campaignId", this.milestone.getCampaign().getId());
 		tuple.put("draftMode", this.milestone.getCampaign().getDraftMode());
 	}
 
