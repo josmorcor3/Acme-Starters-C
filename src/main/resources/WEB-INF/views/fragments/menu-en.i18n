@@ -50,6 +50,16 @@ master.menu.user-account.inventor-profile = Inventor profile
 # fundraiser
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
+
+
+# master.menu.fundraiser ####################################################
+
+master.menu.fundraiser = Fundraiser
+master.menu.fundraiser.my-strategies = My strategies
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Authenticated
 # sponsor
 master.menu.user-account.become-sponsor = Become a sponsor
 master.menu.user-account.sponsor-profile = Sponsor profile
