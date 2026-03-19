@@ -23,6 +23,9 @@ master.menu.anonymous.list-reports = List reports
 master.menu.authenticated = Authenticated
 master.menu.authenticated.list-inventions = List inventions
 master.menu.authenticated.list-reports = List reports
+master.menu.authenticated.list-strategies = List strategies
+master.menu.authenticated.list-sponsorships = List sponsorship
+master.menu.authenticated.list-campaigns = List campaigns
 
 # master.menu.administrator ###################################################
 
