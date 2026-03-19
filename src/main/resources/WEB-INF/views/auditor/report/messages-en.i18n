@@ -1,0 +1,34 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+auditor.report.form.title = Report form
+auditor.report.list.title = Listing of reports
+
+auditor.report.form.label.ticker = Ticker:
+auditor.report.form.label.name = Name:
+auditor.report.form.label.description = Description:
+auditor.report.form.label.startMoment = Start time:
+auditor.report.form.label.endMoment = End time:
+auditor.report.form.label.moreInfo = More info: (Optional)
+auditor.report.form.label.monthsActive = Active months:
+auditor.report.form.label.hours = Hours:
+
+auditor.report.form.button.sections = Sections
+auditor.report.form.button.update = Update
+auditor.report.form.button.delete = Delete
+auditor.report.form.button.publish = Publish
+auditor.report.form.button.create = Create
+
+auditor.report.list.label.ticker = Ticker 
+auditor.report.list.label.name = Name
+auditor.report.list.label.auditorName = Auditor
+auditor.report.list.label.hours = Hours
+
+auditor.report.list.button.create = Create

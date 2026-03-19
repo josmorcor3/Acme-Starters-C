@@ -16,12 +16,12 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.report.list.label.ticker" path="ticker" width="20%"/>
-	<acme:list-column code="any.report.list.label.name" path="name" width="30%"/>
-	<acme:list-column code="any.report.list.label.monthsActive" path="monthsActive" width="20%"/>
-	<acme:list-column code="any.report.list.label.hours" path="hours" width="20%"/>
-	<acme:list-hidden path="description"/>
-	<acme:list-hidden path="startMoment"/>
-	<acme:list-hidden path="endMoment"/>
-	<acme:list-hidden path="moreInfo"/>
+	<acme:list-column code="auditor.section.list.label.name" path="name" width="40%"/>
+	<acme:list-column code="auditor.section.list.label.hours" path="hours" width="40%"/>
+	<acme:list-column code="auditor.section.list.label.kind" path="kind" width="30%"/>
+	<acme:list-hidden path="notes"/>
 </acme:list>
+
+<jstl:if test="${showCreate}">
+	<acme:button code="auditor.section.list.button.create" action="/auditor/section/create?reportId=${reportId}"/>
+</jstl:if>

@@ -33,3 +33,4 @@ acme.validation.invalid-time-interval.message = El instante de comienzo debe ser
 
 acme.validation.invalid-currency.message = Moneda incorrecta
 acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a menos que tenga un hito
+acme.validation.report.published-without-sections.message = Un informe no puede ser publicado a menos que tenga una sección

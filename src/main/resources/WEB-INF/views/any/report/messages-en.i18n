@@ -9,23 +9,23 @@
 # they accept any liabilities with respect to them.
 
 
-any.reports.list.title = Listing of reports
+any.report.list.title = Listing of reports
 any.report.form.title = Report details
 
 
-any.reports.form.label.ticker = Ticker:
-any.reports.form.label.name = Name:
-any.reports.form.label.description = Description:
-any.reports.form.label.startMoment = Start time:
-any.reports.form.label.endMoment = End time:
-any.reports.form.label.moreInfo = More info: (Optional)
-any.reports.form.label.monthsActive = Active months:
-any.reports.form.label.hours = Hours:
+any.report.form.label.ticker = Ticker:
+any.report.form.label.name = Name:
+any.report.form.label.description = Description:
+any.report.form.label.startMoment = Start time:
+any.report.form.label.endMoment = End time:
+any.report.form.label.moreInfo = More info: (Optional)
+any.report.form.label.monthsActive = Active months:
+any.report.form.label.hours = Hours:
 
-any.reports.form.button.sections = Sections
-any.reports.form.button.auditor = Auditor
+any.report.form.button.sections = Sections
+any.report.form.button.auditor = Auditor
 
-any.reports.list.label.ticker = Ticker 
-any.reports.list.label.name = Name
-any.reports.list.label.monthsActive = Active months
-any.reports.list.label.hours = Hours
+any.report.list.label.ticker = Ticker 
+any.report.list.label.name = Name
+any.report.list.label.monthsActive = Active months
+any.report.list.label.hours = Hours

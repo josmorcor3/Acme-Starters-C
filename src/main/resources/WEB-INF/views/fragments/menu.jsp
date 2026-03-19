@@ -17,9 +17,8 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:menu-bar>
+
 	<acme:menu-left>
-		
-	
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
@@ -29,14 +28,14 @@
 			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
-		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.anonymous.list-inventions" action="/any/invention/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-strategies" action="/any/strategy/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-sponsorships" action="/any/sponsorship/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-strategies" action="/any/strategy/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-sponsorships" action="/any/sponsorship/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-reports" action="/any/report/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
@@ -55,7 +54,7 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
-
+		
 		<%-- INVENTOR --%>
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.list-my-inventions" action="/inventor/invention/list"/>
@@ -64,20 +63,22 @@
 		<%-- FUNDRAISER --%>
 		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
 			<acme:menu-suboption code="master.menu.fundraiser.my-strategies" action="/fundraiser/strategy/list"/>
-		
 		</acme:menu-option>
-  
-  		<%-- SPOKESPERSON --%>
+		
+		<%-- AUDITOR --%>
+		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
+			<acme:menu-suboption code="master.menu.auditor.list-my-reports" action="/auditor/report/list"/>
+		</acme:menu-option>
+	 
+	 	<%-- SPOKESPERSON --%>
 		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
 			<acme:menu-suboption code="master.menu.spokesperson.my-campaigns" action="/spokesperson/campaign/list"/>
-		
 		</acme:menu-option>
-  
-    	<%-- SPONSOR --%>
-    	<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
-        	<acme:menu-suboption code="master.menu.sponsor.my-sponsorships" action="/sponsor/sponsorship/list"/>
-    	</acme:menu-option>
-		
+	  
+	    <%-- SPONSOR --%>
+	      <acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
+	        <acme:menu-suboption code="master.menu.sponsor.my-sponsorships" action="/sponsor/sponsorship/list"/>
+	    </acme:menu-option>
 	</acme:menu-left>
 	
 	<acme:menu-right>		
@@ -96,7 +97,7 @@
 			<%-- sponsor --%>
 			<acme:menu-suboption code="master.menu.user-account.become-sponsor" action="/authenticated/sponsor/create" access="!hasRealm('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.sponsor-profile" action="/authenticated/sponsor/update" access="hasRealm('Sponsor')"/>
-			<%-- sponsor --%>
+			<%-- spokesperson --%>
 			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
 			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
 			<%-- auditor --%>
