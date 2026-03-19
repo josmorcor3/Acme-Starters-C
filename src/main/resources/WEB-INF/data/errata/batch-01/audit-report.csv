@@ -1,0 +1,42 @@
+key,ticker,name,description,start-moment,end-moment,more-info,draft-mode,key:auditor
+# base entity
+report-01,,,,,,,false,
+# ticker standard variations
+report-02,aa12-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-03,AA1-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-04,AA12_abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-05,AA12-abcd,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-06,AA12-abcdefghijk,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+# ticker - no singular values
+# name - standard variations
+report-07,AA00-abc06,null,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-08,AA00-abc07,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-09,AA00-abc09,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+# name - no singular values
+# description - standard variations
+report-10,AA00-abc10,"Lorem ipsum dolor sit amet, consectetu",null,2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-11,AA00-abc11,"Lorem ipsum dolor sit amet, consectetu","",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+report-12,AA00-abc13,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+# description - no singular values
+# start-moment - standard variations
+report-13,AA00-abc14,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",null,2025/01/01 00:02,http://lorem.com/ipsum,false,auditor-01
+report-14,AA00-abc15,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/07 23:59,2200/12/31 23:59,http://lorem.com/ipsum,false,auditor-01
+report-15,AA00-abc15,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2201/01/01 00:01,2200/12/31 23:59,http://lorem.com/ipsum,false,auditor-01
+# start-moment - no singular values
+# end-moment - standard variations
+report-16,AA00-abc16,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,null,http://lorem.com/ipsum,false,auditor-01
+report-17,AA00-abc17,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/07 23:59,http://lorem.com/ipsum,false,auditor-01
+report-18,AA00-abc18,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2201/01/01 00:01,http://lorem.com/ipsum,false,auditor-01
+# end-moment - no singular values
+# more-info - standard variations
+report-19,AA00-abc19,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,"http://",false,auditor-01
+report-20,AA00-abc20,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,"ftp://",false,auditor-01
+report-21,AA00-abc21,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,"http://a",false,auditor-01
+report-22,AA00-abc22,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,"ftp://a",false,auditor-01
+report-23,AA00-abc23,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",false,auditor-01
+# more-info - no singular values
+# draft-mode - standard variations
+# draft-mode - no singular values
+# key:auditor - standard variations
+report-25,AA00-abc36,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2025/01/01 00:01,http://lorem.com/ipsum,false,null
+# key:auditor - no singular values

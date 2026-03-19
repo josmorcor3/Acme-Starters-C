@@ -1,0 +1,26 @@
+
+inventor.invention.form.title = Invention form
+inventor.invention.list.title = Listing of inventions
+
+inventor.invention.form.label.ticker = Ticker:
+inventor.invention.form.label.name = Name:
+inventor.invention.form.label.description = Description:
+inventor.invention.form.label.startMoment = Start time:
+inventor.invention.form.label.endMoment = End time:
+inventor.invention.form.label.moreInfo = More info: (Optional)
+inventor.invention.form.label.monthsActive = Active months:
+inventor.invention.form.label.cost = Cost:
+
+inventor.invention.form.button.parts = Parts
+inventor.invention.form.button.update = Update
+inventor.invention.form.button.delete = Delete
+inventor.invention.form.button.publish = Publish
+inventor.invention.form.button.create = Create
+
+inventor.invention.list.label.ticker = Ticker 
+inventor.invention.list.label.name = Name
+inventor.invention.list.label.inventorName = Inventor
+inventor.invention.list.label.cost = Cost
+
+inventor.invention.list.button.create = Create
+

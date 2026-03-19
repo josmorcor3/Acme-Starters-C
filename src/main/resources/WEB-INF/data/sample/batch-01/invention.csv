@@ -7,32 +7,50 @@ invention-03,TK00-abc001abc,"Invention","Description of invention",2025/01/01 00
 invention-04,TK00-abc001abcd,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
 # ticker - no singular values
 # name - standard variations
-invention-05,TK00-abc01,"I","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-06,TK00-abc02,"I2","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-07,TK00-abc03,"Invention-Invention-Invention-Invention-Invention-Invention-Invention-name","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-08,TK00-abc04,"Invention-Invention-Invention-Invention-Invention-Invention-Invention-name2","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
+invention-05,TK00-abc01,"I","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-06,TK00-abc02,"I2","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-07,TK00-abc03,"Invention-Invention-Invention-Invention-Invention-Invention-Invention-name","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-08,TK00-abc04,"Invention-Invention-Invention-Invention-Invention-Invention-Invention-name2","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
 # name - no singular values
 # description - standard variations
-invention-09,TK00-abc05,"Invention","D",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-10,TK00-abc06,"Invention","D2",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-11,TK00-abc07,"Invention","Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Desc",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-12,TK00-abc08,"Invention","Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Desc2",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
+invention-09,TK00-abc05,"Invention","D",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-10,TK00-abc06,"Invention","D2",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-11,TK00-abc07,"Invention","Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Desc",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-12,TK00-abc08,"Invention","Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Description of invention-Desc2",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
 # description - no singular values
 # start-moment - standard variations
-invention-13,TK00-abc09,"Invention","Description of invention",2025/01/01 00:02,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
-invention-14,TK00-abc10,"Invention","Description of invention",2200/12/31 23:58,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
+invention-13,TK00-abc09,"Invention","Description of invention",2025/01/01 00:02,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-14,TK00-abc10,"Invention","Description of invention",2028/02/29 00:02,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-15,TK00-abc11,"Invention","Description of invention",2200/12/31 23:58,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
 # start-moment - no singular values
 # end-moment - standard variations
-invention-15,TK00-abc11,"Invention","Description of invention",2025/01/01 00:01,2025/01/01 00:02,http://www.acme.com/inventions,false,inventor-01
-invention-16,TK00-abc12,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:58,http://www.acme.com/inventions,false,inventor-01
+invention-16,TK00-abc12,"Invention","Description of invention",2025/01/01 00:01,2025/01/01 00:02,http://www.acme.com/inventions,true,inventor-01
+invention-17,TK00-abc13,"Invention","Description of invention",2025/01/01 00:02,2196/02/29 23:59,http://www.acme.com/inventions,true,inventor-01
+invention-18,TK00-abc14,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:58,http://www.acme.com/inventions,true,inventor-01
 # end-moment - no singular values
 # more-info - standard variations
-invention-17,TK00-abc13,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,,false,inventor-01
-invention-18,TK00-abc14,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,https://www.acme.com/inventions,false,inventor-01
+invention-19,TK00-abc15,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,,true,inventor-01
+invention-20,TK00-abc16,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://a.b",true,inventor-01
+invention-21,TK00-abc17,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,inventor-01
+invention-22,TK00-abc18,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org/a/b?a&b",true,inventor-01
+invention-23,TK00-abc19,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org/",true,inventor-01
+invention-24,TK00-abc20,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org/a/b?",true,inventor-01
+invention-25,TK00-abc21,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org/a/b",true,inventor-01
+invention-26,TK00-abc22,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org/a",true,inventor-01
+invention-27,TK00-abc23,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org?a&b",true,inventor-01
+invention-28,TK00-abc24,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org?a",true,inventor-01
+invention-29,TK00-abc25,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org?",true,inventor-01
+invention-30,TK00-abc26,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://example.org?a=1&b=2",true,inventor-01
+invention-31,TK00-abc27,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit.html#dolor",true,inventor-01
+invention-32,TK00-abc28,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit.html",true,inventor-01
+invention-33,TK00-abc29,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://www.lorem-ipsum.org",true,inventor-01
+invention-34,TK00-abc30,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",true,inventor-01
+invention-35,TK00-abc31,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",true,inventor-01
+invention-36,TK00-abc32,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,,true,inventor-01
 # more-info - no singular values
 # draft-mode - standard variations
-invention-19,TK00-abc15,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-01
+invention-37,TK00-abc33,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-01
 # draft-mode - no singular values
 # inventor - standard variations
-invention-20,TK00-abc16,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,false,inventor-02
+invention-38,TK00-abc34,"Invention","Description of invention",2025/01/01 00:01,2200/12/31 23:59,http://www.acme.com/inventions,true,inventor-02
 # inventor - no singular values
