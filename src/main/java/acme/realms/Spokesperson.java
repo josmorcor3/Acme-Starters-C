@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractRole;
 import acme.client.components.validation.Mandatory;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,18 +23,18 @@ public class Spokesperson extends AbstractRole {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
 	private String				cv;
 
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
-	//Podría ser otro tipo pero nos lo facilitan
+
 	private String				achievements;
 
 	@Mandatory
-	@Valid //Validar recursivamente todas las restricciones del tipo
+	@Valid
 	@Column
 	private Boolean				licensed;
 
