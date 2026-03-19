@@ -49,8 +49,6 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 	public void validate() {
 		super.validateObject(this.campaign);
 
-		Date now = new Date();
-
 		boolean startMomentIsInFuture;
 		startMomentIsInFuture = MomentHelper.isFuture(this.campaign.getStartMoment());
 
