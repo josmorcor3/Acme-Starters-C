@@ -1,7 +1,7 @@
 
 package acme.entities.sponsorships;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -20,6 +20,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -77,26 +78,28 @@ public class Sponsorship extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Mandatory
+	@Valid
 	@Transient
 	@Autowired
 	private SponsorshipRepository	sponsorshipRepository;
 
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		double months = duration.toDays() / 30.;
-		return Math.round(months * 10) / 10.;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
+	@Mandatory
+	@ValidMoney
 	@Transient
 	public Money getTotalMoney() {
 		Money totalMoney = new Money();
-		totalMoney.setCurrency("EUR");
-
 		Double res;
+		totalMoney.setCurrency("EUR");
 		res = this.sponsorshipRepository.calculateTotalMoney(this.getId());
-
 		if (res == null)
 			totalMoney.setAmount(0.0);
 		else
@@ -111,5 +114,4 @@ public class Sponsorship extends AbstractEntity {
 	@Valid
 	@ManyToOne(optional = false)
 	private Sponsor sponsor;
-
 }

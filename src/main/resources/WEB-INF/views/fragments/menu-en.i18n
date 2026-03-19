@@ -11,9 +11,12 @@
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
+master.menu.anonymous.list-campaigns = List campaigns
 master.menu.anonymous.list-inventions = List inventions
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.list-strategies = List strategies
+master.menu.anonymous.list-sponsorships = List sponsorship
+master.menu.anonymous.list-reports = List reports
 
 # master.menu.administrator ###################################################
 
@@ -41,6 +44,9 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.provider-profile = Provider profile
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.consumer-profile = Consumer profile
+# inventor
+master.menu.user-account.become-inventor = Become a inventor
+master.menu.user-account.inventor-profile = Inventor profile
 # fundraiser
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
@@ -54,3 +60,12 @@ master.menu.fundraiser.my-strategies = My strategies
 # master.menu.authenticated ####################################################
 
 master.menu.authenticated = Authenticated
+# sponsor
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
+# spokesperson
+master.menu.user-account.become-spokesperson = Become a spokesperson
+master.menu.user-account.spokesperson-profile = Spokesperson profile
+# auditor
+master.menu.user-account.become-auditor= Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile

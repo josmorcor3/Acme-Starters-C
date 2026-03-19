@@ -50,7 +50,7 @@ sponsorship-36,TK00-abc32,"Lorem ipsum dolor sit amet, consectetur","Lorem ipsum
 sponsorship-37,TK00-abc33,"Lorem ipsum dolor sit amet, consectetur","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2200/12/31 23:59,,false,sponsor-01
 # more-info - no singular values
 # draft-mode - standard variations
-sponsorship-38,TK00-abc34,"Lorem ipsum dolor sit amet, consectetur","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2200/12/31 23:59,"http://lorem.com/ipsum",true,sponsor-01
+sponsorship-38,TK00-abc34,"Lorem ipsum dolor sit amet, consectetur","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,sponsor-01
 # draft-mode - no singular values
 # sponsorship - standard variations
 sponsorship-39,TK00-abc35,"Lorem ipsum dolor sit amet, consectetur","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 00:01,2200/12/31 23:59,"http://lorem.com/ipsum",false,sponsor-02

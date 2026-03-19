@@ -28,7 +28,7 @@ user-account-fundraiser-07,true,"UserIdentity{name: 'Fundraiser7', surname: 'fun
 user-account-fundraiser-08,true,"UserIdentity{name: 'Fundraiser8', surname: 'fundraiser', email: 'fundraiser8@acme.com'}",fundraiser8,fundraiser8
 user-account-fundraiser-09,true,"UserIdentity{name: 'Fundraiser9', surname: 'fundraiser', email: 'fundraiser9@acme.com'}",fundraiser9,fundraiser9
 user-account-fundraiser-10,true,"UserIdentity{name: 'Fundraiser10', surname: 'fundraiser', email: 'fundraiser10@acme.com'}",fundraiser10,fundraiser10
-
+#inventor
 user-account-inventor-01,true,"UserIdentity{name: 'Inventor1', surname: 'Acme', email: 'inventor1@acme.com'}",inventor1,inventor1
 user-account-inventor-02,true,"UserIdentity{name: 'Inventor2', surname: 'Acme', email: 'inventor2@acme.com'}",inventor2,inventor2
 user-account-inventor-03,true,"UserIdentity{name: 'Inventor3', surname: 'Acme', email: 'inventor3@acme.com'}",inventor3,inventor3
@@ -46,7 +46,18 @@ user-account-spokesperson-03,true,"UserIdentity{name: 'Spokesperson3', surname: 
 user-account-spokesperson-04,true,"UserIdentity{name: 'Spokesperson4', surname: 'spokesperson', email: 'spokesperson4@acme.com'}",spokesperson4,spokesperson4
 user-account-spokesperson-05,true,"UserIdentity{name: 'Spokesperson5', surname: 'spokesperson', email: 'spokesperson5@acme.com'}",spokesperson5,spokesperson5
 user-account-spokesperson-06,true,"UserIdentity{name: 'Spokesperson6', surname: 'spokesperson', email: 'spokesperson6@acme.com'}",spokesperson6,spokesperson6
-user-account-spokesperson-07,true,"UserIdentity{name: 'Spokesperson7', surname: 'spokesperson', email: 'spokesperson7@acme.com'}",spokesperson7,spokesperson7       
+user-account-spokesperson-07,true,"UserIdentity{name: 'Spokesperson7', surname: 'spokesperson', email: 'spokesperson7@acme.com'}",spokesperson7,spokesperson7
 user-account-spokesperson-08,true,"UserIdentity{name: 'Spokesperson8', surname: 'spokesperson', email: 'spokesperson8@acme.com'}",spokesperson8,spokesperson8
 user-account-spokesperson-09,true,"UserIdentity{name: 'Spokesperson9', surname: 'spokesperson', email: 'spokesperson9@acme.com'}",spokesperson9,spokesperson9
 user-account-spokesperson-10,true,"UserIdentity{name: 'Spokesperson10', surname: 'spokesperson', email: 'spokesperson10@acme.com'}",spokesperson10,spokesperson10
+# auditor
+user-account-auditor-01,true,"UserIdentity{name: 'Auditor1', surname: 'Acme', email: 'auditor1@acme.com'}",auditor1,auditor1
+user-account-auditor-02,true,"UserIdentity{name: 'Auditor2', surname: 'Acme', email: 'auditor2@acme.com'}",auditor2,auditor2
+user-account-auditor-03,true,"UserIdentity{name: 'Auditor3', surname: 'Acme', email: 'auditor3@acme.com'}",auditor3,auditor3
+user-account-auditor-04,true,"UserIdentity{name: 'Auditor4', surname: 'Acme', email: 'auditor4@acme.com'}",auditor4,auditor4
+user-account-auditor-05,true,"UserIdentity{name: 'Auditor5', surname: 'Acme', email: 'auditor5@acme.com'}",auditor5,auditor5
+user-account-auditor-06,true,"UserIdentity{name: 'Auditor6', surname: 'Acme', email: 'auditor6@acme.com'}",auditor6,auditor6
+user-account-auditor-07,true,"UserIdentity{name: 'Auditor7', surname: 'Acme', email: 'auditor7@acme.com'}",auditor7,auditor7
+user-account-auditor-08,true,"UserIdentity{name: 'Auditor8', surname: 'Acme', email: 'auditor8@acme.com'}",auditor8,auditor8
+user-account-auditor-09,true,"UserIdentity{name: 'Auditor9', surname: 'Acme', email: 'auditor9@acme.com'}",auditor9,auditor9
+user-account-auditor-10,true,"UserIdentity{name: 'Auditor10', surname: 'Acme', email: 'auditor10@acme.com'}",auditor10,auditor10

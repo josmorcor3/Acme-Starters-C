@@ -19,3 +19,13 @@ acme.validation.invalid-time-interval.message = El momento de inicio debe ir ant
 
 acme.validation.startMoment-is-not-in-the-future.message = El momento de inicio debe estar en el futuro  
 acme.validation.endMoment-is-not-in-the-future.message = El momento de fin debe estar en el futuro  
+
+acme.validation.null-start-moment.message = Una invención debe tener un instante de comienzo no nulo
+acme.validation.null-end-moment.message = Una invención debe tener un instante de fin no nulo
+acme.validation.invalid-time-interval.message = El intervalo de tiempo debe estar en el futuro con respecto al momento en que se publica una invención
+acme.validation.invalid-currency.message = La divisa de la moneda debe ser euros
+
+acme.validation.invention.published-without-parts.message = Una invención no puede ser publicada a no ser que tenga al menos una parte
+acme.validation.sponsorship.published-without-donations.message = Un patrocinio no puede ser publicada a menos que tenga una donación
+acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
+acme.validation.campaign.published-without-milestone.message = Una campaña no puede ser publicada a menos que tenga un hito
