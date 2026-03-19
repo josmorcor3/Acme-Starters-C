@@ -91,6 +91,8 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.;
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 		return Math.round(months * 10) / 10.;
 	}

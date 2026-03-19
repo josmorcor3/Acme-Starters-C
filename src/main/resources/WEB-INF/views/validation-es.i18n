@@ -13,10 +13,15 @@ acme.validation.text.message   		= Debe tener entre 1 y 255 caracteres
 
 acme.validation.duplicated-ticker.message	= Referencia ya usada
 acme.validation.ticker.message				= La referencia debe comenzar con dos letras mayúsculas y dos dígitos, seguido de un guion y de 5 a 10 letras, dígitos o guiones bajos
+acme.validation.strategy.published-without-tactics.message = Una estrategia no puede ser publicada a menos que tenga una táctica
 
-acme.validation.null-start-moment.message = Una invención debe tener un instante de comienzo no nulo
-acme.validation.null-end-moment.message = Una invención debe tener un instante de fin no nulo
-acme.validation.invalid-time-interval.message = El intervalo de tiempo debe estar en el futuro con respecto al momento en que se publica una invención
+acme.validation.invalid-time-interval.message = El momento de inicio debe ir antes que el momento de fin
+
+acme.validation.startMoment-is-not-in-the-future.message = El momento de inicio debe estar en el futuro  
+acme.validation.endMoment-is-not-in-the-future.message = El momento de fin debe estar en el futuro  
+
+acme.validation.already-published.message = Ya está publicado
+acme.validation.invalid-time-interval.message = El instante de comienzo debe ser anterior al de fin
 acme.validation.invalid-currency.message = La divisa de la moneda debe ser euros
 
 acme.validation.invention.published-without-parts.message = Una invención no puede ser publicada a no ser que tenga al menos una parte
