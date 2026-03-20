@@ -41,7 +41,7 @@ public class AuditorReportPublishService extends AbstractService<Auditor, Report
 
 	@Override
 	public void bind() {
-		;
+		super.bindObject(this.report, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
@@ -60,7 +60,7 @@ public class AuditorReportPublishService extends AbstractService<Auditor, Report
 				boolean startMomentIsFuture;
 
 				startMomentIsFuture = MomentHelper.isFuture(this.report.getStartMoment());
-				super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+				super.state(startMomentIsFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
 			}
 		}
 		{
@@ -68,7 +68,7 @@ public class AuditorReportPublishService extends AbstractService<Auditor, Report
 				boolean endMomentIsFuture;
 
 				endMomentIsFuture = MomentHelper.isFuture(this.report.getEndMoment());
-				super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+				super.state(endMomentIsFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
 			}
 		}
 		{
