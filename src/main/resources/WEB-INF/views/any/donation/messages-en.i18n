@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-any.donation.form.title = donation form
+any.donation.form.title = Donation form
 any.donation.list.title = Listing of donations
 
 any.donation.form.label.name = Name:
