@@ -43,7 +43,7 @@ public class InventorInventionDeleteService extends AbstractService<Inventor, In
 
 	@Override
 	public void bind() {
-		super.bindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		;
 	}
 
 	@Override
@@ -59,11 +59,10 @@ public class InventorInventionDeleteService extends AbstractService<Inventor, In
 		this.repository.deleteAll(parts);
 		this.repository.delete(this.invention);
 	}
-	
+
 	@Override
 	public void unbind() {
 		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 	}
-	
 
 }
