@@ -18,6 +18,6 @@
 <acme:form>
 	<acme:form-textbox code="any.donation.form.label.name" path="name"/>
 	<acme:form-textarea code="any.donation.form.label.notes" path="notes"/>
-	<acme:form-money code="any.donation.form.label.money" path="mooney"/>
+	<acme:form-money code="any.donation.form.label.money" path="money"/>
 	<acme:form-select code="any.donation.form.label.kind" path="kind" choices="${kinds}"/>
 </acme:form>
