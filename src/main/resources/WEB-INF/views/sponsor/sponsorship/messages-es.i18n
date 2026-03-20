@@ -8,8 +8,8 @@
 # purposes.  The copyright owner does not offer sponsor warranties or representations, nor do
 # they accept sponsor liabilities with respect to them.
 
-sponsor.sponsorship.form.title = Detalles de la estrategia
-sponsor.sponsorship.list.title = Lista de estrategias
+sponsor.sponsorship.form.title = Detalles del patrocinio
+sponsor.sponsorship.list.title = Lista de patrocinios
 
 sponsor.sponsorship.form.label.name = Nombre:
 sponsor.sponsorship.form.label.ticker = Referencia:
