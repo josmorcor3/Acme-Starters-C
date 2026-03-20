@@ -19,6 +19,6 @@
 	<acme:form-textbox code="any.sponsor.form.label.fullName" path="userAccount.identity.fullName"/>
 	<acme:form-textbox code="any.sponsor.form.label.email" path="userAccount.identity.email"/>
 	<acme:form-textarea code="any.sponsor.form.label.address" path="address"/>
-	<acme:form-textarea code="any.sponsor.form.label.im" path="im"/>
+	<acme:form-textbox code="any.sponsor.form.label.im" path="im"/>
 	<acme:form-checkbox code="any.sponsor.form.label.gold" path="gold"/>
 </acme:form>

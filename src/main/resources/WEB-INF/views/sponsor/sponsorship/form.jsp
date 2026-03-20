@@ -26,7 +26,7 @@
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">
 			<acme:form-double code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive"/>
-			<acme:form-textbox code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney"/>
+			<acme:form-money code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney"/>
 			
 			<acme:button code="sponsor.sponsorship.form.button.donation" action="/sponsor/donation/list?sponsorshipId=${id}"/>
 			
@@ -34,7 +34,7 @@
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
 			
 			<acme:form-double code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly="true"/>
-			<acme:form-textbox code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly="true"/>
+			<acme:form-money code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly="true"/>
 			
 			<acme:button code="sponsor.sponsorship.form.button.donation" action="/sponsor/donation/list?sponsorshipId=${id}"/>
 			<acme:submit code="sponsor.sponsorship.form.button.update" action="/sponsor/sponsorship/update"/>
