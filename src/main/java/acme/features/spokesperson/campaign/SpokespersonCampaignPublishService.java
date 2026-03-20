@@ -51,14 +51,14 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 			boolean startMomentIsInFuture;
 			startMomentIsInFuture = MomentHelper.isFuture(this.campaign.getStartMoment());
 
-			super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future");
+			super.state(startMomentIsInFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
 		}
 
 		if (this.campaign.getEndMoment() != null) {
 			boolean endMomentIsInFuture;
 			endMomentIsInFuture = MomentHelper.isFuture(this.campaign.getEndMoment());
 
-			super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future");
+			super.state(endMomentIsInFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
 		}
 		boolean hasMilestones;
 

@@ -60,7 +60,7 @@ public class InventorInventionPublishService extends AbstractService<Inventor, I
 				boolean startMomentIsFuture;
 
 				startMomentIsFuture = MomentHelper.isFuture(this.invention.getStartMoment());
-				super.state(startMomentIsFuture, "startMoment", "acme.validation.start-moment-is-not-in-the-future.message");
+				super.state(startMomentIsFuture, "startMoment", "acme.validation.startMoment-is-not-in-the-future.message");
 			}
 		}
 		{
@@ -68,7 +68,7 @@ public class InventorInventionPublishService extends AbstractService<Inventor, I
 				boolean endMomentIsFuture;
 
 				endMomentIsFuture = MomentHelper.isFuture(this.invention.getEndMoment());
-				super.state(endMomentIsFuture, "endMoment", "acme.validation.end-moment-is-not-in-the-future.message");
+				super.state(endMomentIsFuture, "endMoment", "acme.validation.endMoment-is-not-in-the-future.message");
 			}
 		}
 		{
